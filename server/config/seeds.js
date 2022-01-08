@@ -2,7 +2,7 @@
 // const { User, Product, Category } = require('../models');
 const { User } = require("../models");
 
-const users = await User.create({
+const users = User.create({
   firstName: "Elijah",
   lastName: "Holt",
   email: "eholt@testmail.com",
