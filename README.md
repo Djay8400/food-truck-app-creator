@@ -20,8 +20,11 @@
 
 ## Project Description
 
-- A MERN Stack application that allows for everyday food truck owners to create their own custom application that helps enhance their bussiness. Food truck owners will have the ability to add menu items, customize order experience, and change prices with ease. 
+- A MERN Stack application that allows for everyday food truck owners to create their own custom application that helps enhance their bussiness. Food truck owners will have the ability to add menu items, customize order experience, and change prices with ease.
 
+## Tests
+
+[Demo App!](https://food-truck-fix.herokuapp.com/)
 
 ## Installation Instructions
 
@@ -30,23 +33,20 @@
 Install Dependencies
 
 ```terminal
-npm install- 
-express 
-bcrypt 
-express-session 
-dotenv 
+npm install-
+express
+bcrypt
+express-session
+dotenv
 ```
 
 ## Usage Information
 
-
-
-
 ## Collaborating
 
- * For general comments, ideas, or bugs. Please report to [here](https://github.com/Djay8400/food-truck-app-creator/issues).
+- For general comments, ideas, or bugs. Please report to [here](https://github.com/Djay8400/food-truck-app-creator/issues).
 
 ## Questions
 
- * Contact us on Github [Here](https://github.com/samadams412)
-  * or by Email at "CreatedBusinessEmailHere@gmail.com"
+- Contact us on Github [Here](https://github.com/samadams412)
+- or by Email at "CreatedBusinessEmailHere@gmail.com"
