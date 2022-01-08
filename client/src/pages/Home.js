@@ -5,7 +5,7 @@ import Nav from "../components/Nav";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="NavBar">
       <Nav />
       <h1>FOOD TRUCK APP</h1>
     </div>
