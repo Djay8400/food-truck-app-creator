@@ -1,4 +1,4 @@
-<h1 align="center">MERN Stack Food Truck Application Generator</h1>
+<h1 align="center">Food Truck Fix a MERN Stack Application</h1>
 
 <h1 align="center">Technologies Used</h1>
 <p align="center">
@@ -6,8 +6,8 @@
     <img src="https://img.shields.io/badge/Express.js-orange" />
     <img src="https://img.shields.io/badge/React.js-blue"  />
     <img src="https://img.shields.io/badge/Node.js-lightgreen" />
-    <img src="https://img.shields.io/badge/dotenv-green" />
     <img src="https://img.shields.io/badge/Heroku-purple" />
+    <img src="https://img.shields.io/badge/Bulma.io-green" />
 </p>
 
 #### Table of Contents
