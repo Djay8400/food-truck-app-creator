@@ -1,20 +1,32 @@
-// const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+const Product = require("./Product");
+const { Schema } = mongoose;
 
-// const { Schema } = mongoose;
+const orderSchema = new Schema({
+  createdAt: {
+    type: Date,
+    default: Date.now,
+    get: (timestamp) => dateFormat(timestamp),
+  },
+  products: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Product",
+    },
+  ],
+  //   total: {
+  //     type: Number,
+  //   }
+  products: [Product.schema],
+});
 
-// const orderSchema = new Schema({
-//   purchaseDate: {
-//     type: Date,
-//     default: Date.now
-//   },
-//   products: [
-//     {
-//       type: Schema.Types.ObjectId,
-//       ref: 'Product'
-//     }
-//   ]
-// });
+orderSchema.virtual("total").get(function () {
+  const reducer = (previousValue, currentValue) =>
+    previousValue.price + currentValue.price;
 
-// const Order = mongoose.model('Order', orderSchema);
+  return this.products.reduce(reducer);
+});
 
-// module.exports = Order;
+const Order = mongoose.model("Order", orderSchema);
+
+module.exports = Order;
