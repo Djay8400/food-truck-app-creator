@@ -12,6 +12,12 @@ const Home = () => {
         <h1>FOOD TRUCK APP</h1>
         {/* <FormCustomization /> */}
       </div>
+      <div>
+        {/* dynamically add FTO logo from form */}
+        <image></image>
+        {/* map through products and list them here */}
+        {/* put cart at bottom of page here */}
+      </div>
     </div>
   );
 };
