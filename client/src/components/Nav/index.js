@@ -27,7 +27,7 @@ function Nav() {
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div className="navbar-start">
-          <a class="navbar-item">Home</a>
+          <a className="navbar-item">Home</a>
 
           <a className="navbar-item">Documentation</a>
 
