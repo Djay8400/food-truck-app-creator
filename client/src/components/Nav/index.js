@@ -1,4 +1,6 @@
 import React from "react";
+import Auth from "../../utils/auth";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -26,22 +28,8 @@ function Nav() {
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
           <a class="navbar-item">Home</a>
-
-          <a class="navbar-item">Documentation</a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">More</a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item">About</a>
-              <a class="navbar-item">Jobs</a>
-              <a class="navbar-item">Contact</a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item">Report an issue</a>
-            </div>
-          </div>
+          <a class="navbar-item">Contact</a>
         </div>
-
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
@@ -58,3 +46,32 @@ function Nav() {
 }
 
 export default Nav;
+
+// function showNavigation() {
+//   if (Auth.loggedIn()) {
+//     return (
+//       <ul className="flex-row">
+//         <li className="mx-1">
+//           <Link to="/orderHistory">Order History</Link>
+//         </li>
+//         <li className="mx-1">
+//           {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+//           <a href="/" onClick={() => Auth.logout()}>
+//             Logout
+//           </a>
+//         </li>
+//       </ul>
+//     );
+//   } else {
+//     return (
+//       <ul className="flex-row">
+//         <li className="mx-1">
+//           <Link to="/signup">Signup</Link>
+//         </li>
+//         <li className="mx-1">
+//           <Link to="/login">Login</Link>
+//         </li>
+//       </ul>
+//     );
+//   }
+// }
