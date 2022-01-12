@@ -4,6 +4,7 @@ import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 
 function Nav() {
+  return (
   <nav
     className="navbar is-light"
     role="navigation"
@@ -57,6 +58,7 @@ function Nav() {
       </div>
     </div>
   </nav>;
-}
+  );
+};
 
 export default Nav;
