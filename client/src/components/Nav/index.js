@@ -35,10 +35,9 @@ function Nav() {
             <a className="navbar-link">More</a>
 
             <div className="navbar-dropdown">
-              <a className="navbar-item">About</a>
-              <a className="navbar-item">Jobs</a>
-              <a className="navbar-item">Food-Truck</a>
-              <a className="navbar-item">Contact</a>
+              <a className="navbar-item">Profile</a>
+              <a className="navbar-item">Food-Trucks</a>
+
               <hr className="navbar-divider" />
               <a className="navbar-item">Report an issue</a>
             </div>
