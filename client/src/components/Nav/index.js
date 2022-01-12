@@ -12,6 +12,7 @@ function Nav() {
         <a className="navbar-item" href="https://bulma.io"></a>
 
         <a
+          href="/"
           role="button"
           className="navbar-burger"
           aria-label="menu"
@@ -27,11 +28,15 @@ function Nav() {
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div className="navbar-start">
-          <a className="navbar-item">Home</a>
+          <a href="/" className="navbar-item">
+            Home
+          </a>
 
-          <a className="navbar-item">Documentation</a>
+          <a href="/contact" className="navbar-item">
+            Contact Us
+          </a>
 
-          <div className="navbar-item has-dropdown is-hoverable">
+          {/* <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">More</a>
 
             <div className="navbar-dropdown">
@@ -41,16 +46,18 @@ function Nav() {
               <hr className="navbar-divider" />
               <a className="navbar-item">Report an issue</a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-dark">
+              <a href="/signup" className="button is-dark">
                 <strong>Sign up</strong>
               </a>
-              <a className="button is-light">Log in</a>
+              <a href="/login" className="button is-light">
+                Log in
+              </a>
             </div>
           </div>
         </div>
