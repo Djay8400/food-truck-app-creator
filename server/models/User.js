@@ -8,57 +8,56 @@ const Product = require("./Product");
 const userSchema = new Schema({
   firstName: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
   lastName: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
   username: {
     type: String,
-    required: true,
+    // required: true,
     unique: true,
     trim: true,
   },
   email: {
     type: String,
-    required: true,
+    // required: true,
     unique: true,
     match: [/.+@.+\..+/, "Must match an email address!"],
   },
   password: {
     type: String,
-    required: true,
+    // required: true,
     minlength: 5,
   },
   businessName: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
   homeAddress: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
 
   city: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
 
   state: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
 
   zipCode: {
     type: String,
-    required: true,
     trim: true,
   },
 
