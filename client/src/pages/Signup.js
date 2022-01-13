@@ -129,7 +129,7 @@ function Signup(props) {
         <div className="flex-row space-between my-2">
           <label htmlFor="address">Home Street Address:</label>
           <input
-            placeholder="youremail@test.com"
+            placeholder="123 North"
             name="homeAddress"
             type="homeAddress"
             id="homeAddress"
