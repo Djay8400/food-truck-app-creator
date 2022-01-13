@@ -7,17 +7,7 @@ import Nav from "../components/Nav";
 const Home = () => {
   return (
     <div className="main-container">
-      <div className="NavBar">
-        <Nav />
-        <h1>FOOD TRUCK APP</h1>
-        {/* <FormCustomization /> */}
-        <div className="app-preview">
-          <image></image>
-          <h1>Business Name Title</h1>
-          {/* add products here */}
-        </div>
-        <div>{/* dynamically add products */}</div>
-      </div>
+      <h1>FOOD TRUCK APP</h1>
     </div>
   );
 };
