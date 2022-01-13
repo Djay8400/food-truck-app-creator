@@ -43,19 +43,38 @@ const userSchema = new Schema({
     required: true,
     trim: true,
   },
-  primaryColor: {
+
+  city: {
     type: String,
     required: true,
+    trim: true,
+  },
+
+  state: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+
+  zipCode: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+
+  primaryColor: {
+    type: String,
+
     trim: true,
   },
   secondaryColor: {
     type: String,
-    required: true,
+
     trim: true,
   },
   font: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
   logo: {

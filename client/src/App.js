@@ -1,7 +1,6 @@
 // import logo from "./logo.svg";
 import React, { useState } from "react";
 import "./App.css";
-import foodTruck from "./assets/foodtruck.jpg";
 import Home from "./pages/Home";
 import StripeCheckout from "react-stripe-checkout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
