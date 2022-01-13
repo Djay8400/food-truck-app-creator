@@ -25,12 +25,12 @@ function Nav() {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-primary">
+              <div className="button is-primary">
                 <Link to="/signup">Signup</Link>
-              </a>
-              <a class="button is-light">
+              </div>
+              <div className="button is-light">
                 <Link to="/login">Login</Link>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -74,14 +74,14 @@ function Nav() {
 
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start">
-          <a className="navbar-item">
+          <div className="navbar-item">
             <Link to="/">Home</Link>
-          </a>
+          </div>
 
           <a className="navbar-item">Profile</a>
 
           <div className="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">More</a>
+            <a className="navbar-link">More</a>
 
             <div className="navbar-dropdown">
               <a className="navbar-item">Food-Trucks</a>
@@ -147,7 +147,7 @@ export default Nav;
         </a>
       </div>
 
-      <div id="navbarBasicExample" class="navbar-menu">
+      <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start">
           <a className="navbar-item">Home</a>
 
