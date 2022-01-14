@@ -1,7 +1,6 @@
 // import logo from "./logo.svg";
 import React, { useState } from "react";
 import "./App.css";
-import foodTruck from "./assets/foodtruck.jpg";
 import Home from "./pages/Home";
 import StripeCheckout from "react-stripe-checkout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -14,7 +13,7 @@ import {
 import "./App.css";
 // import foodTruck from "./assets/foodtruck.jpg";
 import { setContext } from "@apollo/client/link/context";
-// import { StoreProvider } from "./utils/GlobalState";
+import { StoreProvider } from "./utils/GlobalState";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
@@ -71,14 +70,14 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div className="App">
-          {/* <StoreProvider> */}
-          <Nav />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/login" element={<Login />} />
-            <Route exact path="/signup" element={<Signup />} />
-          </Routes>
-          {/* </StoreProvider> */}
+          <StoreProvider>
+            <Nav />
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/signup" element={<Signup />} />
+            </Routes>
+          </StoreProvider>
         </div>
       </Router>
     </ApolloProvider>

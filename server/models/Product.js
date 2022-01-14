@@ -3,15 +3,15 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
-  name: {
+  menuItem: {
     type: String,
     required: true,
     trim: true,
   },
-  description: {
+  menuDescription: {
     type: String,
   },
-  image: {
+  productImage: {
     type: String,
   },
   price: {
