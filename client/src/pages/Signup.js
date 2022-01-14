@@ -110,7 +110,7 @@ function Signup(props) {
             placeholder="******"
             name="password"
             type="password"
-            id="pwd"
+            id="pwd2"
             onChange={handleChange}
           />
         </div>
@@ -191,7 +191,7 @@ function Signup(props) {
             placeholder="Menu-item"
             name="menuItem"
             type="menuItem"
-            id="menuItem"
+            id="menuDescription"
             onChange={handleChange}
           />
         </div>
