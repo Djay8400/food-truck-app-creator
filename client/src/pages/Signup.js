@@ -10,6 +10,14 @@ function Signup(props) {
     email: "",
     password: "",
   });
+  const [customChoices, setCustomChoices] = useState({
+    businessName: "",
+    logo: "",
+    menuItem: "",
+    menuDescription: "",
+    productImage: "",
+    price: "",
+  });
   const [addUser, { error }] = useMutation(ADD_USER);
 
   const handleFormSubmit = async (event) => {
@@ -32,6 +40,14 @@ function Signup(props) {
     const { name, value } = event.target;
     setFormState({
       ...formState,
+      [name]: value,
+    });
+  };
+
+  const handleChange2 = (event) => {
+    const { name, value } = event.target;
+    setCustomChoices({
+      ...customChoices,
       [name]: value,
     });
   };
@@ -122,7 +138,7 @@ function Signup(props) {
             name="businessName"
             type="businessName"
             id="businessName"
-            onChange={handleChange}
+            onChange={handleChange2}
           />
         </div>
 
@@ -181,7 +197,7 @@ function Signup(props) {
             name="menuItem"
             type="menuItem"
             id="menuItem"
-            onChange={handleChange}
+            onChange={handleChange2}
           />
         </div>
 
@@ -189,10 +205,10 @@ function Signup(props) {
           <label htmlFor="menuDescription">Menu Description</label>
           <input
             placeholder="Menu-item"
-            name="menuItem"
-            type="menuItem"
+            name="menuDescription"
+            type="menuDescription"
             id="menuDescription"
-            onChange={handleChange}
+            onChange={handleChange2}
           />
         </div>
 
@@ -203,7 +219,7 @@ function Signup(props) {
             name="productImage"
             type="file"
             id="productImage"
-            onChange={handleChange}
+            onChange={handleChange2}
           />
         </div>
 
@@ -214,7 +230,7 @@ function Signup(props) {
             name="price"
             type="price"
             id="price"
-            onChange={handleChange}
+            onChange={handleChange2}
           />
         </div>
 
@@ -236,7 +252,7 @@ function Signup(props) {
             name="logo"
             type="file"
             id="logo"
-            onChange={handleChange}
+            onChange={handleChange2}
           />
         </div>
 
