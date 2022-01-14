@@ -2,22 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { pluralize } from "../../utils/helpers";
 /////////////// Context API ////////////////////////////////////////////
-// import { useStoreContext } from "../../utils/GlobalState";
+import { useStoreContext } from "../../utils/GlobalState";
 /////////////// Context API ////////////////////////////////////////////
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 ////////////////////////////// Redux ///////////////////////////////////
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 ////////////////////////////// Redux ///////////////////////////////////
 
 function ProductItem(item) {
   /////////////// Context API ////////////////////////////////////////////
-  // const [state, dispatch] = useStoreContext();
+  const [state, dispatch] = useStoreContext();
   /////////////// Context API ////////////////////////////////////////////
 
   ////////////////////////////// Redux ///////////////////////////////////
-  const dispatch = useDispatch();
-  const state = useSelector((state) => state);
+  // const dispatch = useDispatch();
+  // const state = useSelector((state) => state);
   ////////////////////////////// Redux ///////////////////////////////////
 
   const { image, name, _id, price, quantity } = item;
