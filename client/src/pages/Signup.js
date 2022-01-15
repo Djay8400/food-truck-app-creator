@@ -9,8 +9,6 @@ function Signup(props) {
     username: "",
     email: "",
     password: "",
-  });
-  const [customChoices, setCustomChoices] = useState({
     businessName: "",
     logo: "",
     menuItem: "",
@@ -18,6 +16,13 @@ function Signup(props) {
     productImage: "",
     price: "",
   });
+  //creating empty pieces of state, should it be done here or within GlobalState.js
+  // pull in our users like const { users } = state();
+
+  // const [customChoices, setCustomChoices] = useState({
+    
+  // });
+
   const [addUser, { error }] = useMutation(ADD_USER);
 
   const handleFormSubmit = async (event) => {
@@ -28,12 +33,18 @@ function Signup(props) {
         username: formState.username,
         email: formState.email,
         password: formState.password,
+        businessName: formState.businessName,
+        logo: formState.logo,
+        menuItem: formState.menuItem,
+        menuDescription: formState.menuDescription,
+        productImage: formState.productImage,
+        price: formState.price,
       },
     });
     console.log(mutationResponse);
     console.log(error);
-    // const token = mutationResponse.data.addUser.token;
-    // Auth.login(token);
+    const token = mutationResponse.data.addUser.token;
+    Auth.login(token);
   };
 
   const handleChange = (event) => {
@@ -44,13 +55,13 @@ function Signup(props) {
     });
   };
 
-  const handleChange2 = (event) => {
-    const { name, value } = event.target;
-    setCustomChoices({
-      ...customChoices,
-      [name]: value,
-    });
-  };
+  // const handleChange2 = (event) => {
+  //   const { name, value } = event.target;
+  //   setCustomChoices({
+  //     ...customChoices,
+  //     [name]: value,
+  //   });
+  // };
 
   return (
     <div className="container my-1">
@@ -138,7 +149,7 @@ function Signup(props) {
             name="businessName"
             type="businessName"
             id="businessName"
-            onChange={handleChange2}
+            onChange={handleChange}
           />
         </div>
 
@@ -197,7 +208,7 @@ function Signup(props) {
             name="menuItem"
             type="menuItem"
             id="menuItem"
-            onChange={handleChange2}
+            onChange={handleChange}
           />
         </div>
 
@@ -208,7 +219,7 @@ function Signup(props) {
             name="menuDescription"
             type="menuDescription"
             id="menuDescription"
-            onChange={handleChange2}
+            onChange={handleChange}
           />
         </div>
 
@@ -219,7 +230,7 @@ function Signup(props) {
             name="productImage"
             type="file"
             id="productImage"
-            onChange={handleChange2}
+            onChange={handleChange}
           />
         </div>
 
@@ -230,7 +241,7 @@ function Signup(props) {
             name="price"
             type="price"
             id="price"
-            onChange={handleChange2}
+            onChange={handleChange}
           />
         </div>
 
@@ -252,7 +263,7 @@ function Signup(props) {
             name="logo"
             type="file"
             id="logo"
-            onChange={handleChange2}
+            onChange={handleChange}
           />
         </div>
 

@@ -1,5 +1,4 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { Query } = require("mongoose");
 // // const { User, Product, Category, Order } = require("../models");
 const { signToken } = require("../utils/auth");
 // const stripe = require("stripe")("sk_test_4eC39HqLyjWDarjtT1zdp7dc");
@@ -7,8 +6,10 @@ const { User } = require("../models");
 
 const resolvers = {
   Query: {
-    users: async () => {
-      return await User.find({});
+    users: async (parent, args) => {
+      const users = await User.find({});
+      console.log(users);
+      return users;
     },
   },
   Mutation: {

@@ -17,7 +17,7 @@ const orderSchema = new Schema({
   //   total: {
   //     type: Number,
   //   }
-  products: [Product.schema],
+  // products: [Product.schema],
 });
 
 orderSchema.virtual("total").get(function () {
