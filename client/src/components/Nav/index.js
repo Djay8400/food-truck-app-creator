@@ -54,10 +54,10 @@ function Nav() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="#">
+        <div className="navbar-item">
           {/* <img src="" width="112" height="28" /> */}
-          FTF
-        </a>
+          <Link to="/">FTF</Link>
+        </div>
 
         <a
           role="button"
@@ -75,7 +75,7 @@ function Nav() {
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start">
           <div className="navbar-item">
-            <Link to="/">Home</Link>
+            <Link to="/home">Home</Link>
           </div>
 
           <a className="navbar-item">Profile</a>

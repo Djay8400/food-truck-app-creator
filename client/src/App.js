@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Home from "./pages/Home";
+import HomeDev from "./pages/HomeDev";
 import StripeCheckout from "react-stripe-checkout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
@@ -73,7 +74,8 @@ function App() {
           <StoreProvider>
             <Nav />
             <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Route exact path="/" element={<HomeDev />} />
+              <Route exact path="/home" element={<Home />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/signup" element={<Signup />} />
             </Routes>

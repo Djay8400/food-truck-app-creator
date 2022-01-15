@@ -64,29 +64,29 @@ function Signup(props) {
         <strong>Profile Setup</strong>
       </h1>
 
-      <div className="flex-row space-between my-2">
-        <label htmlFor="email">First Name:</label>
-        <input
-          placeholder="First-Name"
-          name="firstName"
-          type="firstName"
-          id="firstName"
-          onChange={handleChange}
-        />
-      </div>
-
-      <div className="flex-row space-between my-2">
-        <label htmlFor="lastName">Last Name:</label>
-        <input
-          placeholder="Last-Name"
-          name="lastName"
-          type="lastName"
-          id="lastName"
-          onChange={handleChange}
-        />
-      </div>
-
       <form onSubmit={handleFormSubmit}>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="email">First Name:</label>
+          <input
+            placeholder="First-Name"
+            name="firstName"
+            type="firstName"
+            id="firstName"
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="flex-row space-between my-2">
+          <label htmlFor="lastName">Last Name:</label>
+          <input
+            placeholder="Last-Name"
+            name="lastName"
+            type="lastName"
+            id="lastName"
+            onChange={handleChange}
+          />
+        </div>
+
         <div className="flex-row space-between my-2">
           <label htmlFor="userName">username:</label>
           <input
