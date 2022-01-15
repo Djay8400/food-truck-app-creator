@@ -57,7 +57,7 @@ function Nav() {
 
   return (
     <nav
-      className="navbar has-background-warning"
+      className="navbar has-background-light"
       role="navigation"
       aria-label="main navigation navbar-is-dark"
       style={{ fontWeight: "bolder", color: "royalblue" }}

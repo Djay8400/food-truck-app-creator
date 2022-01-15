@@ -1,4 +1,5 @@
 import React from "react";
+import truckImg from "../assets/foodtruck.jpg";
 // import FormCustomization from "../components/Form";
 // import FoodItem from "../components/FoodItem";
 import Nav from "../components/Nav";
@@ -10,54 +11,49 @@ import { Link } from "react-router-dom";
 const HomeDev = () => {
   return (
     <div
-      className="content is-normal is-mobile has-background-warning"
-      style={{ backgroundColor: "#EAC435" }}
+      className="content is-normal is-mobile has-background-light"
+      style={{ backgroundColor: "white" }}
     >
-      <img src={FTFlogo} alt="food-truck-fix logo" width={"200px"}></img>
-
-      <z
-        cursorStyle={{ backgroundColor: "#4454e2", height: "25px" }}
-        textStyle={{
-          fontWeight: "bold",
-          font: "Times New Roman",
-          fontSize: "25px",
-        }}
-        blinkTimeAfterFinish={-1}
-      >
-        Custom Text Style
-      </z>
-
+      {" "}
       <h1
         className="title is-1"
         style={{
-          color: "#CA5551",
+          color: "black",
           fontWeight: "bolder",
-          textShadow: "2.5px 2.5px black",
+          textShadow: "2px 2px gray",
         }}
       >
-        Welcome <br />
-        <span style={{ fontSize: "2rem" }}>to</span>
-        <br /> Food-Truck-Fix
+        Welcome to <br />
       </h1>
-      <div className=" text is-info">
+      <img src={FTFlogo} alt="food-truck-fix logo" width={"200px"}></img>
+      <div
+        className="card is-centered"
+        style={{
+          backgroundColor: "royaleblue",
+          opacity: "75%",
+          paddingTop: "50px",
+          fontSize: "1.5rem",
+          color: "gray",
+          fontWeight: "bold",
+          textJustify: "inter-word",
+        }}
+      >
         <p
           className="column is-centered"
-          style={{
-            // marginLeft: "200px",
-            // marginRight: "200px",
-            color: "gray",
-            fontWeight: "bold",
-            padding: "40px",
-            textJustify: "inter-word",
-            // textAlign: "justify",
-          }}
+          style={
+            {
+              // textAlign: "justify",
+            }
+          }
         >
+          {/* <img src={truckImg} alt="food-truck" style={{ zIndex: "-1" }}></img> */}
           Do you have a food truck and need a custom app for your customers to
           order from? Food-Truck-Fix is an app builder tailored to help
           food-trucks design their own app, fill out one simple form with your
           signup info and app preferences and Food-Truck-Fix will create it for
           you.
         </p>
+
         <p
           style={{
             // marginLeft: "200px",

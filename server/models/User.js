@@ -66,16 +66,16 @@ const userSchema = new Schema({
 
     trim: true,
   },
-  secondaryColor: {
-    type: String,
+  // secondaryColor: {
+  //   type: String,
 
-    trim: true,
-  },
-  font: {
-    type: String,
-    // required: true,
-    trim: true,
-  },
+  //   trim: true,
+  // },
+  // font: {
+  //   type: String,
+  //   // required: true,
+  //   trim: true,
+  // },
   logo: {
     imageURL: String,
   },
