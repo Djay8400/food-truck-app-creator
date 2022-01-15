@@ -25,11 +25,15 @@ function Nav() {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <div className="button is-primary">
-                <Link to="/signup">Signup</Link>
+              <div className="button is-danger">
+                <Link to="/signup" style={{ color: "white" }}>
+                  Signup
+                </Link>
               </div>
-              <div className="button is-light">
-                <Link to="/login">Login</Link>
+              <div className="button is-success">
+                <Link to="/login" style={{ color: "white" }}>
+                  Login
+                </Link>
               </div>
             </div>
           </div>
@@ -52,7 +56,13 @@ function Nav() {
   }
 
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav
+      className="navbar has-background-warning"
+      role="navigation"
+      aria-label="main navigation navbar-is-dark"
+      style={{ fontWeight: "bolder", color: "royalblue" }}
+      // style={{ backgroundColor: "#EAC435" }}
+    >
       <div className="navbar-brand">
         <div className="navbar-item">
           {/* <img src="" width="112" height="28" /> */}
