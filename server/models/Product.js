@@ -22,6 +22,10 @@ const productSchema = new Schema({
     type: String,
     trim: true,
   },
+  order: {
+    type: Schema.Types.ObjectId,
+    ref: "Order",
+  },
   //   quantity: {
   //     type: Number,
   //     min: 0,

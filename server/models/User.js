@@ -66,16 +66,16 @@ const userSchema = new Schema({
 
     trim: true,
   },
-  secondaryColor: {
-    type: String,
+  // secondaryColor: {
+  //   type: String,
 
-    trim: true,
-  },
-  font: {
-    type: String,
-    // required: true,
-    trim: true,
-  },
+  //   trim: true,
+  // },
+  // font: {
+  //   type: String,
+  //   // required: true,
+  //   trim: true,
+  // },
   logo: {
     imageURL: String,
   },
@@ -85,8 +85,14 @@ const userSchema = new Schema({
       ref: "Order",
     },
   ],
-  products: [Product.schema],
-  orders: [Order.schema],
+  products: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Product",
+    },
+  ],
+  // products: [Product.schema],
+  // orders: [Order.schema],
 });
 
 // set up pre-save middleware to create password
