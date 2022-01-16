@@ -10,6 +10,7 @@ const HomeDev = () => {
   return (
     <div className="main-container">
       <img src={FTFlogo} alt="food-truck-fix logo" width={"200px"}></img>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=Chef Movie&amp;size=100x100" alt="qr code" title="qr code" />
       <h1>Welcome to Food-Truck-Fix</h1>
       <p>
         Do you have a food truck and need a custom app for your customers to
