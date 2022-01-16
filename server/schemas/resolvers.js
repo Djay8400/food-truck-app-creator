@@ -6,7 +6,7 @@ const { User } = require("../models");
 
 const resolvers = {
   Query: {
-    users: async (parent, args) => {
+    user: async (parent, args) => {
       const users = await User.find({});
       console.log(users);
       return users;
