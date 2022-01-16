@@ -8,6 +8,15 @@ const typeDefs = gql`
     username: String
     password: String
     email: String
+    businessName: String
+    homeAddress: String
+    city: String
+    state: String
+    zipCode: String
+    primaryColor: String
+    logo: String
+    orders: [Order]
+    products: [Product]
   }
 
   type Product {
@@ -25,7 +34,6 @@ const typeDefs = gql`
     createdAt: String
     products: [Product]
   }
-
 
   type Query {
     user: [User]
@@ -50,7 +58,6 @@ const typeDefs = gql`
 //     _id: ID
 //     name: String
 //   }
-
 
 //   type User {
 //     _id: ID
