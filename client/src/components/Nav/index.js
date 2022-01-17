@@ -70,17 +70,14 @@ function Nav() {
       <div id="navbar" className="navbar-menu">
         <div className="navbar-start">
           <div className="navbar-item">
-            <Link to="/home">Home</Link>
+            <Link to="/example">Example Page</Link>
           </div>
-
-          <a className="navbar-item">Profile</a>
 
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">More</a>
 
             <div className="navbar-dropdown">
-              <a className="navbar-item">Food-Trucks</a>
-              <a className="navbar-item">Contact</a>
+              <Link to="/contact">Contact us</Link>
               <hr className="navbar-divider" />
               <a className="navbar-item">Report an issue</a>
               <a className="navbar-item">

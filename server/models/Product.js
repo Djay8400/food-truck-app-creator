@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 const productSchema = new Schema({
   menuItem: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
   menuDescription: {
@@ -16,7 +16,7 @@ const productSchema = new Schema({
   },
   price: {
     type: Number,
-    required: true,
+    // required: true,
   },
   allergens: {
     type: String,

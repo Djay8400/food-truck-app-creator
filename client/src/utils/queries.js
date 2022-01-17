@@ -19,9 +19,9 @@ export const QUERY_USER = gql`
 `;
 //to get user info based off of their ID
 export const QUERY_USER_INFO = gql`
-query getUserInfo($user: ID) {
-  user {
-    firstName
+  query getUserInfo($user: ID) {
+    user {
+      firstName
       lastName
       username
       email
@@ -30,8 +30,9 @@ query getUserInfo($user: ID) {
       city
       state
       zipCode
+    }
   }
-}`
+`;
 
 export const QUERY_PRODUCTS = gql`
   query getProducts($category: ID) {
@@ -56,6 +57,8 @@ export const QUERY_CHECKOUT = gql`
     }
   }
 `;
+
+/////////// original QUERY ALL /////////////
 
 export const QUERY_ALL_PRODUCTS = gql`
   {

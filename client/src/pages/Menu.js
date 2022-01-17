@@ -26,7 +26,7 @@ const Menu = () => {
         </div>
       </div>
 
-      {/* <ProductList /> */}
+      <ProductList />
       <Cart />
     </div>
   );

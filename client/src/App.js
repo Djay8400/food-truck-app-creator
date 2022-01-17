@@ -10,13 +10,16 @@ import {
   ApolloProvider,
   createHttpLink,
 } from "@apollo/client";
-import "./index.css"
+import "./index.css";
 // import foodTruck from "./assets/foodtruck.jpg";
 import { setContext } from "@apollo/client/link/context";
 import { StoreProvider } from "./utils/GlobalState";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
+import ExamplePage from "./pages/ExamplePage";
+import Menu from "./pages/Menu";
+import Contact from "./pages/Contact";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -46,10 +49,12 @@ function App() {
             <Nav />
             <Routes>
               <Route exact path="/" element={<HomeDev />} />
-              <Route exact path="/home" element={<Home />} />
+              {/* <Route exact path="/home" element={<Home />} /> */}
+              <Route exact path="/example" element={<ExamplePage />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/signup" element={<Signup />} />
-              <Route exact path="/menu/:id" element={<Home />} />
+              <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/menu" element={<Menu />} />
             </Routes>
           </StoreProvider>
         </div>
@@ -59,4 +64,3 @@ function App() {
 }
 
 export default App;
-

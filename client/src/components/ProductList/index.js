@@ -5,7 +5,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 /////////////// Context API ////////////////////////////////////////////
 import { UPDATE_PRODUCTS } from "../../utils/actions";
 import { useQuery } from "@apollo/client";
-import { QUERY_PRODUCTS } from "../../utils/queries";
+import { QUERY_ALL_PRODUCTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
 ////////////////////////////// Redux ///////////////////////////////////
@@ -24,8 +24,8 @@ function ProductList() {
 
   const { currentCategory } = state;
 
-  const { loading, data } = useQuery(QUERY_PRODUCTS);
-
+  const { loading, data } = useQuery(QUERY_ALL_PRODUCTS);
+  console.log(data);
   useEffect(() => {
     if (data) {
       dispatch({
@@ -64,10 +64,10 @@ function ProductList() {
             <ProductItem
               key={product._id}
               _id={product._id}
-              image={product.image}
-              name={product.name}
+              image={product.productImage}
+              name={product.menuItem}
               price={product.price}
-              quantity={product.quantity}
+              description={product.menuDescription}
             />
           ))}
         </div>
