@@ -66,18 +66,9 @@ const userSchema = new Schema({
 
     trim: true,
   },
-  // secondaryColor: {
-  //   type: String,
-
-  //   trim: true,
-  // },
-  // font: {
-  //   type: String,
-  //   // required: true,
-  //   trim: true,
-  // },
   logo: {
-    imageURL: String,
+    type: String,
+    // imageURL: String,
   },
   orders: [
     {

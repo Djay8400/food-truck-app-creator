@@ -9,13 +9,13 @@ db.once('open', async () => {
     lastName: 'Holt',
     email: 'eholt@testmail.com',
     password: 'password12345',
-  });
-  await User.create({
-    username: 'samadams11',
-    firstName: 'Sam',
-    lastName: 'Adams',
-    email: 'sadam@testmail.com',
-    password: 'password12345',
+    businessName: "Sam's Smokey BBQ",
+    homeAddress: "1212 Summer Dr.",
+    city: "San Antonio",
+    state: "Texas",
+    zipCode: "78258",
+    primaryColor: "Blue",
+    logo: "https://logourlexample.com",
   });
 
   console.log('users seeded');
