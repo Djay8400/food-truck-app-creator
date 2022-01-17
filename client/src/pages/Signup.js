@@ -278,7 +278,7 @@ function Signup(props) {
               aria-haspopup="true"
               aria-controls="dropdown-menu3"
             >
-              <span>Click me</span>
+              <span>Select</span>
               <span className="icon is-small">
                 <i className="fas fa-angle-down" aria-hidden="true"></i>
               </span>
@@ -315,94 +315,6 @@ function Signup(props) {
           </div>
         </div>
         <br />
-        {/* secondary color */}
-        <h1>
-          <strong>Secondary Color</strong>
-        </h1>
-
-        <div className="dropdown is-hoverable">
-          <div className="dropdown-trigger">
-            <button
-              className="button"
-              aria-haspopup="true"
-              aria-controls="dropdown-menu3"
-            >
-              <span>Click me</span>
-              <span className="icon is-small">
-                <i className="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div className="dropdown-menu" id="dropdown-menu3" role="menu">
-            <div className="dropdown-content">
-              <a href="" className="dropdown-item">
-                Red
-              </a>
-              <a href="" className="dropdown-item">
-                Blue
-              </a>
-              <a href="" className="dropdown-item">
-                Green
-              </a>
-              <a href="" className="dropdown-item">
-                Yellow
-              </a>
-              <a href="" className="dropdown-item">
-                Black
-              </a>
-              <a href="" className="dropdown-item">
-                White
-              </a>
-              <a href="" className="dropdown-item">
-                Gray
-              </a>
-              <hr className="dropdown-divider" />
-              <a href="#" className="dropdown-item">
-                More
-              </a>
-            </div>
-          </div>
-        </div>
-        <br />
-        {/* fonts  */}
-        <h1>
-          <strong>Fonts</strong>
-        </h1>
-
-        <div className="dropdown is-hoverable">
-          <div className="dropdown-trigger">
-            <button
-              className="button"
-              aria-haspopup="true"
-              aria-controls="dropdown-menu3"
-            >
-              <span>Click me</span>
-              <span className="icon is-small">
-                <i className="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div className="dropdown-menu" id="dropdown-menu3" role="menu">
-            <div className="dropdown-content">
-              <a href="" className="dropdown-item" id="sans-serif">
-                Sans-Serif
-              </a>
-              <a href="" className="dropdown-item" id="serif">
-                Serif
-              </a>
-              <a href="" className="dropdown-item">
-                Grid
-              </a>
-              <a href="" className="dropdown-item">
-                Form
-              </a>
-              <hr className="dropdown-divider" />
-              <a href="#" className="dropdown-item">
-                More
-              </a>
-            </div>
-          </div>
-        </div>
         <br />
 
         <div className="flex-row flex-end">
