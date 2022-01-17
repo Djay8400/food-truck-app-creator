@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
@@ -9,19 +9,7 @@ function Signup(props) {
     username: "",
     email: "",
     password: "",
-    businessName: "",
-    logo: "",
-    menuItem: "",
-    menuDescription: "",
-    productImage: "",
-    price: "",
   });
-  //creating empty pieces of state, should it be done here or within GlobalState.js
-  // pull in our users like const { users } = state();
-
-  // const [customChoices, setCustomChoices] = useState({
-    
-  // });
 
   const [addUser, { error }] = useMutation(ADD_USER);
 
@@ -33,12 +21,6 @@ function Signup(props) {
         username: formState.username,
         email: formState.email,
         password: formState.password,
-        businessName: formState.businessName,
-        logo: formState.logo,
-        menuItem: formState.menuItem,
-        menuDescription: formState.menuDescription,
-        productImage: formState.productImage,
-        price: formState.price,
       },
     });
     console.log(mutationResponse);
@@ -55,28 +37,173 @@ function Signup(props) {
     });
   };
 
-  // const handleChange2 = (event) => {
-  //   const { name, value } = event.target;
-  //   setCustomChoices({
-  //     ...customChoices,
-  //     [name]: value,
-  //   });
-  // };
-
   return (
-    <div className="container my-1">
-      <Link to="/login">← Go to Login</Link>
+    <section className="hero signup__hero is-fullheight">
+      <div className="hero-body">
+        <div className="container">
+          <div className="auth__title">
+            <h1>Sign Up</h1>
+          </div>
 
-      <h2>Signup</h2>
+          <div className="columns is-centered">
+            <div className="column is-5-tablet is-4-desktop is-3-widescreen">
+              <form onSubmit={handleFormSubmit} className="box">
+                <div className="field">
+                  <label htmlFor="" className="label">
+                    Email
+                  </label>
+                  <div className="control has-icons-left">
+                    <input
+                      name="email"
+                      onChange={handleChange}
+                      type="email"
+                      id="email"
+                      placeholder="e.g. bobsmith@gmail.com"
+                      className="input"
+                      required
+                    />
+                    <span className="icon is-small is-left">
+                      <i className="fa fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+                <div className="field">
+                  <label htmlFor="" className="label">
+                    Username
+                  </label>
+                  <div className="control has-icons-left">
+                    <input
+                      name="username"
+                      onChange={handleChange}
+                      type="username"
+                      id="username"
+                      placeholder="e.g. SmokeySamsBBQ"
+                      className="input"
+                      required
+                    />
+                    <span className="icon is-small is-left">
+                    <i class="uil uil-user"></i>
+                    </span>
+                  </div>
+                </div>
+                <div className="field">
+                  <label htmlFor="" className="label">
+                    Password
+                  </label>
+                  <div className="control has-icons-left">
+                    <input
+                      name="password"
+                      onChange={handleChange}
+                      type="password"
+                      id="password"
+                      placeholder="*******"
+                      className="input"
+                      required
+                    />
+                    <span className="icon is-small is-left">
+                      <i className="fa fa-lock"></i>
+                    </span>
+                  </div>
+                </div>
+                <div className="field">
+                  <button className="button is-success">Signup</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h1>TRUCK-FOOD-CUSTOMIZATION</h1>
+    // <div className="container my-1">
+    //   <h1>
+    //     <strong>New User Signup</strong>
+    //   </h1>
 
-      <h1>
-        <strong>Profile Setup</strong>
-      </h1>
+    //   <form onSubmit={handleFormSubmit} className="box">
+    //     <div className="field">
+    //       <p className="control has-icons-left has-icons-right">
+    //       <label htmlFor="userName">User:</label>
+    //         <input
+    //           className="input"
+    //           name="email"
+    //           type="email"
+    //           id="email"
+    //           onChange={handleChange}
+    //           placeholder="Email"
+    //         />
+    //         <span className="icon is-small is-left">
+    //           <i className="fas fa-envelope"></i>
+    //         </span>
+    //         <span className="icon is-small is-right">
+    //           <i className="fas fa-check"></i>
+    //         </span>
+    //       </p>
+    //     </div>
+    //     <div className="field">
+    //       <p className="control has-icons-left">
+    //         <input className="input" type="password" placeholder="Password" />
+    //         <span className="icon is-small is-left">
+    //           <i className="fas fa-lock"></i>
+    //         </span>
+    //       </p>
+    //     </div>
+    //     <div className="flex-row space-between my-2">
+    //       <label htmlFor="userName">User:</label>
+    //       <input
+    //         placeholder="userName"
+    //         name="username"
+    //         type="username"
+    //         id="username"
+    //         onChange={handleChange}
+    //       />
+    //     </div>
 
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
+    //     <div className="flex-row space-between my-2">
+    //       <label htmlFor="email">Email:</label>
+    //       <input
+    //         placeholder="youremail@test.com"
+    //         name="email"
+    //         type="email"
+    //         id="email"
+    //         onChange={handleChange}
+    //       />
+    //     </div>
+
+    //     <div className="flex-row space-between my-2">
+    //       <label htmlFor="pwd">Password:</label>
+    //       <input
+    //         placeholder="******"
+    //         name="password"
+    //         type="password"
+    //         id="pwd"
+    //         onChange={handleChange}
+    //       />
+    //     </div>
+
+    //     <div className="flex-row space-between my-2">
+    //       <label htmlFor="pwd">Re-type password:</label>
+    //       <input
+    //         placeholder="******"
+    //         name="password"
+    //         type="password"
+    //         id="pwd2"
+    //         onChange={handleChange}
+    //       />
+    //     </div>
+
+    //     <div className="flex-row flex-end">
+    //       <button type="submit">Submit</button>
+    //     </div>
+    //   </form>
+    // </div> */
+  );
+}
+
+export default Signup;
+
+{
+  /* <div className="flex-row space-between my-2">
           <label htmlFor="email">First Name:</label>
           <input
             placeholder="First-Name"
@@ -96,53 +223,11 @@ function Signup(props) {
             id="lastName"
             onChange={handleChange}
           />
-        </div>
+        </div> */
+}
 
-        <div className="flex-row space-between my-2">
-          <label htmlFor="userName">username:</label>
-          <input
-            placeholder="userName"
-            name="username"
-            type="username"
-            id="username"
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email:</label>
-          <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Re-type password:</label>
-          <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd2"
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="flex-row space-between my-2">
+{
+  /* <div className="flex-row space-between my-2">
           <label htmlFor="businessName">Food-Truck-Name</label>
           <input
             placeholder="Food-Truck-Name"
@@ -314,103 +399,5 @@ function Signup(props) {
             </div>
           </div>
         </div>
-        <br />
-        {/* secondary color */}
-        <h1>
-          <strong>Secondary Color</strong>
-        </h1>
-
-        <div className="dropdown is-hoverable">
-          <div className="dropdown-trigger">
-            <button
-              className="button"
-              aria-haspopup="true"
-              aria-controls="dropdown-menu3"
-            >
-              <span>Click me</span>
-              <span className="icon is-small">
-                <i className="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div className="dropdown-menu" id="dropdown-menu3" role="menu">
-            <div className="dropdown-content">
-              <a href="" className="dropdown-item">
-                Red
-              </a>
-              <a href="" className="dropdown-item">
-                Blue
-              </a>
-              <a href="" className="dropdown-item">
-                Green
-              </a>
-              <a href="" className="dropdown-item">
-                Yellow
-              </a>
-              <a href="" className="dropdown-item">
-                Black
-              </a>
-              <a href="" className="dropdown-item">
-                White
-              </a>
-              <a href="" className="dropdown-item">
-                Gray
-              </a>
-              <hr className="dropdown-divider" />
-              <a href="#" className="dropdown-item">
-                More
-              </a>
-            </div>
-          </div>
-        </div>
-        <br />
-        {/* fonts  */}
-        <h1>
-          <strong>Fonts</strong>
-        </h1>
-
-        <div className="dropdown is-hoverable">
-          <div className="dropdown-trigger">
-            <button
-              className="button"
-              aria-haspopup="true"
-              aria-controls="dropdown-menu3"
-            >
-              <span>Click me</span>
-              <span className="icon is-small">
-                <i className="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div className="dropdown-menu" id="dropdown-menu3" role="menu">
-            <div className="dropdown-content">
-              <a href="" className="dropdown-item" id="sans-serif">
-                Sans-Serif
-              </a>
-              <a href="" className="dropdown-item" id="serif">
-                Serif
-              </a>
-              <a href="" className="dropdown-item">
-                Grid
-              </a>
-              <a href="" className="dropdown-item">
-                Form
-              </a>
-              <hr className="dropdown-divider" />
-              <a href="#" className="dropdown-item">
-                More
-              </a>
-            </div>
-          </div>
-        </div>
-        <br />
-
-        <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
-  );
+        <br /> */
 }
-
-export default Signup;
