@@ -46,17 +46,21 @@ function ProductList() {
     <div className="my-2">
       <h2>Our Products:</h2>
       {state.products.length ? (
-        <div className="flex-row">
-          {filterProducts().map((product) => (
-            <ProductItem
-              key={product._id}
-              _id={product._id}
-              image={product.image}
-              menuItem={product.menuItem}
-              price={product.price}
-            />
-          ))}
-        </div>
+        <section v-for="card in cardData">
+          <div class="hero-body is-centered">
+            <strong>
+              {filterProducts().map((product) => (
+                <ProductItem
+                  key={product._id}
+                  _id={product._id}
+                  image={product.image}
+                  menuItem={product.menuItem}
+                  price={product.price}
+                />
+              ))}
+            </strong>
+          </div>
+        </section>
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
