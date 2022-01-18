@@ -64,9 +64,7 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="trash">
-          🛒
-        </span>
+        <i className="uil uil-shopping-cart-alt"></i>
       </div>
     );
   }
@@ -95,10 +93,7 @@ const Cart = () => {
         </div>
       ) : (
         <h3>
-          <span role="img" aria-label="shocked">
-            😱
-          </span>
-          You haven't added anything to your cart yet!
+          Cart is Empty
         </h3>
       )}
     </div>

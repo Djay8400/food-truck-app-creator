@@ -1,12 +1,8 @@
 import React from "react";
 import truckImg from "../assets/foodtruck.jpg";
-// import FormCustomization from "../components/Form";
-// import FoodItem from "../components/FoodItem";
-// import Nav from "../components/Nav";
-// import Cart from "../components/Cart";
 import FTFlogo from "../assets/FTFlogo.png";
 import { Link } from "react-router-dom";
-// import modal from "../components/js/modal";
+
 
 export default function Contact() {
   return (

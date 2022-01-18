@@ -37,10 +37,6 @@ app.get("*", (req, res) => {
 res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
-// app.get("/", (req, res) => {
-//   res.send("It works lol");
-// });
-
 app.post("/payment", (req, res) => {
   const { product, token } = req.body;
   console.log("PRODUCT ", product);
