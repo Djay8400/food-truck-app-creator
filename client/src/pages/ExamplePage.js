@@ -5,7 +5,7 @@ import FTFlogo from "../assets/FTFlogo.png";
 import { useStoreContext } from "../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../utils/actions";
 import { idbPromise } from "../utils/helpers";
-import truckImage from "../assets/foodtruck.jpg";
+
 import nachos from "../assets/nachosPic.jpg";
 import burger from "../assets/burgerPic.jpg";
 import chickenTenders from "../assets/chickenStripPic.jpg";
