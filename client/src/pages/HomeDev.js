@@ -24,7 +24,7 @@ const HomeDev = () => {
             </h1>
             <h2 className="home-dev__subtitle">
               Food Truck Fix is the best way to setup your very own application
-              to increase profits and effeciency...
+              to increase profits and efficiency...
             </h2>
           </div>
         </div>
