@@ -22,11 +22,7 @@ const productSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Category',
     required: true
-  },
-  // order: {
-  //   type: Schema.Types.ObjectId,
-  //   ref: "Order",
-  // },
+  }
 });
 
 const Product = mongoose.model("Product", productSchema);
