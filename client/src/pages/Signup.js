@@ -82,7 +82,7 @@ function Signup(props) {
                       required
                     />
                     <span className="icon is-small is-left">
-                      <i class="uil uil-user"></i>
+                      <i className="uil uil-user"></i>
                     </span>
                   </div>
                 </div>

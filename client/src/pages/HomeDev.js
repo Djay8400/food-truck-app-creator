@@ -35,7 +35,7 @@ const HomeDev = () => {
           <div className="column is-4">
             <div className="card is-shady">
               <div className="card-image has-text-centered">
-                <i class="uil uil-check nav__icon"></i>
+                <i className="uil uil-check nav__icon"></i>
               </div>
               <div className="card-content">
                 <div className="content">
@@ -54,7 +54,7 @@ const HomeDev = () => {
           <div className="column is-4">
             <div className="card is-shady">
               <div className="card-image has-text-centered">
-                <i class="uil uil-dollar-alt nav__icon"></i>
+                <i className="uil uil-dollar-alt nav__icon"></i>
               </div>
               <div className="card-content">
                 <div className="content">
@@ -74,7 +74,7 @@ const HomeDev = () => {
           <div className="column is-4">
             <div className="card is-shady">
               <div className="card-image has-text-centered">
-                <i class="uil uil-lightbulb-alt nav__icon"></i>
+                <i className="uil uil-lightbulb-alt nav__icon"></i>
               </div>
               <div className="card-content">
                 <div className="content">
@@ -141,7 +141,7 @@ const HomeDev = () => {
                 className="icon"
                 href="https://github.com/Djay8400/food-truck-app-creator"
               >
-                <i class="uil uil-github nav__icon"></i>
+                <i className="uil uil-github nav__icon"></i>
               </a>
             </p>
             <div className="control level-item">

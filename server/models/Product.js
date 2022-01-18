@@ -18,24 +18,15 @@ const productSchema = new Schema({
     type: Number,
     // required: true,
   },
-  allergens: {
-    type: String,
-    trim: true,
-  },
-  order: {
+  category: {
     type: Schema.Types.ObjectId,
-    ref: "Order",
+    ref: 'Category',
+    required: true
   },
-  //   quantity: {
-  //     type: Number,
-  //     min: 0,
-  //     default: 0
-  //   }
-  //   category: {
-  //     type: Schema.Types.ObjectId,
-  //     ref: 'Category',
-  //     required: true
-  //   }
+  // order: {
+  //   type: Schema.Types.ObjectId,
+  //   ref: "Order",
+  // },
 });
 
 const Product = mongoose.model("Product", productSchema);

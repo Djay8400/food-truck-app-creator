@@ -1,7 +1,6 @@
-// import logo from "./logo.svg";
 import React, { useState } from "react";
-import "./App.css";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+import "./App.css"
 import HomeDev from "./pages/HomeDev";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
@@ -11,14 +10,16 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import "./index.css";
-// import foodTruck from "./assets/foodtruck.jpg";
 import { setContext } from "@apollo/client/link/context";
 import { StoreProvider } from "./utils/GlobalState";
+import Detail from './pages/Detail';
+import NoMatch from './pages/NoMatch';
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
 import ExamplePage from "./pages/ExamplePage";
 import Menu from "./pages/Menu";
+import Success from './pages/Success';
 import Contact from "./pages/Contact";
 
 const httpLink = createHttpLink({
@@ -53,8 +54,11 @@ function App() {
               <Route exact path="/example" element={<ExamplePage />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/signup" element={<Signup />} />
+              <Route exact path="/success" component={Success} />
               <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/products/:id" component={Detail} />
               <Route exact path="/menu" element={<Menu />} />
+              <Route component={NoMatch} />
             </Routes>
           </StoreProvider>
         </div>
