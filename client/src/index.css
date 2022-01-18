@@ -115,6 +115,10 @@ body.dark-theme{
   font-size: var(--h1-font-size);
 }
 
+.services__title{
+  font-size: var(--h1-font-size);
+  margin: 0 0 var(--header-height) 0;
+}
 
 .home-dev__hero{
   margin: 0 0 var(--header-height) 0;

@@ -7,7 +7,7 @@ const Services = () => {
       <div className="section">
         <div className="columns">
           <div className="column has-text-centered">
-            <h1 className="">FTF Services</h1>
+            <h1 className="services__title">FTF Services</h1>
           </div>
         </div>
         <div id="app" className="row columns is-multiline">
