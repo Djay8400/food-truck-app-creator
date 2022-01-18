@@ -49,13 +49,11 @@ const CartItem = ({ item }) => {
             value={item.purchaseQuantity}
             onChange={onChange}
           />
-          <span
-            role="img"
-            aria-label="trash"
+          <button
             onClick={() => removeFromCart(item)}
           >
-            🗑️
-          </span>
+            <i className="uil uil-trash-alt"></i>
+          </button>
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import Home from "./pages/Home";
-import "./App.css"
+import "./App.css";
 import HomeDev from "./pages/HomeDev";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
@@ -12,15 +11,15 @@ import {
 import "./index.css";
 import { setContext } from "@apollo/client/link/context";
 import { StoreProvider } from "./utils/GlobalState";
-import Detail from './pages/Detail';
+import Detail from "./pages/Detail";
 // import NoMatch from './pages/NoMatch';
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
 import ExamplePage from "./pages/ExamplePage";
-import Menu from "./pages/Menu";
-import Success from './pages/Success';
+import Success from "./pages/Success";
 import Contact from "./pages/Contact";
+import Services from "./pages/Services";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -50,14 +49,13 @@ function App() {
             <Nav />
             <Routes>
               <Route exact path="/" element={<HomeDev />} />
-              {/* <Route exact path="/home" element={<Home />} /> */}
               <Route exact path="/example" element={<ExamplePage />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/signup" element={<Signup />} />
-              <Route exact path="/success" element={<Success/>} />
+              <Route exact path="/success" element={<Success />} />
               <Route exact path="/contact" element={<Contact />} />
-              <Route exact path="/products/:id" element={<Detail/>} />
-              {/* <Route exact path="/menu" element={<Menu />} /> */}
+              <Route exact path="/services" element={<Services />} />
+              <Route exact path="/products/:id" element={<Detail />} />
               {/* <Route element={<NoMatch/>} /> */}
             </Routes>
           </StoreProvider>

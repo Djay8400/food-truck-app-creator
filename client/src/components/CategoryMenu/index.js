@@ -21,6 +21,7 @@ function CategoryMenu() {
         type: UPDATE_CATEGORIES,
         categories: categoryData.categories,
       });
+      //console.log(categories);
       categoryData.categories.forEach((category) => {
         idbPromise('categories', 'put', category);
       });
@@ -42,16 +43,17 @@ function CategoryMenu() {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h2>Choose a Category:</h2>
       {categories.map((item) => (
-        <button
+        
+        <button className='button is-rounded category__btn'
           key={item._id}
           onClick={() => {
             handleClick(item._id);
           }}
         >
-          {item.menuItem}
+          {item.name}
         </button>
       ))}
     </div>

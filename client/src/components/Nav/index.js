@@ -1,6 +1,4 @@
 import React from "react";
-import burgerBtn from "../js/burgerButton";
-// import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
 
@@ -50,8 +48,9 @@ function Nav() {
     >
       <div className="navbar-brand">
         <div className="navbar-item">
-          {/* <img src="" width="112" height="28" /> */}
-          <Link to="/">FTF</Link>
+          <Link to="/">
+            <i className="uil uil-truck mr-.5"></i>FTF
+          </Link>
         </div>
 
         <a
@@ -70,7 +69,10 @@ function Nav() {
       <div id="navbar" className="navbar-menu">
         <div className="navbar-start">
           <div className="navbar-item">
-            <Link to="/example">Example Page</Link>
+            <Link to="/example">Mock Up</Link>
+          </div>
+          <div className="navbar-item">
+            <Link to="/services">Services</Link>
           </div>
 
           <div className="navbar-item has-dropdown is-hoverable">
@@ -80,13 +82,6 @@ function Nav() {
               <Link to="/contact">Contact us</Link>
               <hr className="navbar-divider" />
               <a className="navbar-item">Report an issue</a>
-              <a className="navbar-item">
-                <img
-                  src="https://api.qrserver.com/v1/create-qr-code/?data=Chef Movie&amp;size=100x100"
-                  alt="qr code"
-                  title="qr code"
-                />
-              </a>
             </div>
           </div>
         </div>
@@ -97,71 +92,3 @@ function Nav() {
 }
 
 export default Nav;
-
-// function Nav() {
-//   return (
-//     <div className="main-container">
-//       <Link to="/signup">
-//         <p>Signup</p>
-//       </Link>
-//     </div>
-//   );
-// }
-
-// export default Nav;
-
-{
-  /* <nav
-      className="navbar is-light"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io"></a>
-
-        <a
-          role="button"
-          className="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-          // onClick={burgerBtn}
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" className="navbar-menu">
-        <div className="navbar-start">
-          <a className="navbar-item">Home</a>
-
-          <a className="navbar-item">Documentation</a>
-
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">More</a>
-
-            <div className="navbar-dropdown">
-              <a className="navbar-item">Profile</a>
-              <a className="navbar-item">Food-Trucks</a>
-
-              <hr className="navbar-divider" />
-              <a className="navbar-item">Report an issue</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <div className="buttons">
-              <Link to="/signup">
-                <strong>Sign up</strong>
-              </Link>
-              <a className="button is-light">Log in</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav> */
-}
