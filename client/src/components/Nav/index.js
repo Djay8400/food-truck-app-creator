@@ -50,8 +50,9 @@ function Nav() {
     >
       <div className="navbar-brand">
         <div className="navbar-item">
-          {/* <img src="" width="112" height="28" /> */}
-          <Link to="/">FTF</Link>
+          <Link to="/">
+            <i className="uil uil-truck mr-.5"></i>FTF
+          </Link>
         </div>
 
         <a

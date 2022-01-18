@@ -3,17 +3,9 @@ import Cart from "../components/Cart";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import FTFlogo from "../assets/FTFlogo.png";
-// import truckImage from "../assets/foodtruck.jpg";
-// import nachos from "../assets/nachosPic.jpg";
-// import burger from "../assets/burgerPic.jpg";
-// import chickenTenders from "../assets/chickenStripPic.jpg";
-// import soda from "../assets/sodaPic.jpg";
-// import water from "../assets/waterBottlePic.jpg";
-// import eggroll from "../assets/eggrollPic.jpg";
-// import fruitCup from "../assets/fruitCupPic.jpg";
-// import fries from "../assets/fries.jpg";
 
 const ExamplePage = () => {
+
   return (
     <div className="container">
       <CategoryMenu />
