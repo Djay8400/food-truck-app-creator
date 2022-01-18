@@ -16,6 +16,7 @@ export default function Contact() {
             <h1 className="home-dev__title">CONTACT US</h1>
           </div>
         <form
+        // Here we will add our business email, they will send us an actication with a random string to hide email if needed
             action="https://formsubmit.co/1442d7a021f7f0c8eb82404a9f87ceb9"
             method="POST"
             className="contact__form grid"
