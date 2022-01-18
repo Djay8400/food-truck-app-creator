@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
-
+import burgerBtn from "../js/burgerButton";
 function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
@@ -59,6 +59,7 @@ function Nav() {
           aria-label="menu"
           aria-expanded="false"
           data-target="navbar"
+          onClick={burgerBtn}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>

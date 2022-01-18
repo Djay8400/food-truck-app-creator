@@ -46,8 +46,8 @@ function ProductList() {
     <div className="my-2">
       <h2>Our Products:</h2>
       {state.products.length ? (
-        <section v-for="card in cardData">
-          <div class="hero-body is-centered">
+        <section className="is-max-desktop">
+          <div className="hero-body is-centered">
             <strong>
               {filterProducts().map((product) => (
                 <ProductItem
