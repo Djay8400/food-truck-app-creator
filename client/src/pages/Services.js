@@ -14,7 +14,7 @@ const Services = () => {
           <div v-for="card in cardData" key="card.id" className="column is-4">
             <div className="card large">
               <div className="card-image">
-                <figure class="image is-16by9">
+                <figure className="image is-16by9">
                   <img src="./images/servicesImg1.jpg" alt="" />
                 </figure>
               </div>

@@ -1,19 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 import { useStoreContext } from "../../utils/GlobalState";
 
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 
-
 function ProductItem(item) {
-
   const [state, dispatch] = useStoreContext();
 
-
-  const { image, menuItem, _id, price} = item;
+  const { image, menuItem, _id, price, menuDescription } = item;
 
   const { cart } = state;
 
@@ -39,15 +35,38 @@ function ProductItem(item) {
   };
 
   return (
-    <div className="card px-1 py-1">
-      <Link to={`/products/${_id}`}>
-        <img alt={menuItem} src={`/images/${image}`} />
-        <p>{menuItem}</p>
-      </Link>
-      <div>
-        <span>${price}</span>
+    <div className="container">
+    <div className="section">
+      <div id="app" className="row columns is-multiline">
+        <div className="column is-4">
+          <div className="card large">
+            <div className="card-image">
+              <figure className="image is 16by9">
+                <img alt={menuItem} src={`/images/${image}`} />
+              </figure>
+            </div>
+            <div className="card-content">
+              <div className="media">
+                <div className="media-content">
+                  <p className="title is-4 no-padding">{menuItem}</p>
+                </div>
+              </div>
+              <div className="content">
+                <p>{menuDescription}</p>
+              </div>
+              <div className="content">
+                <p>{price}</p>
+              </div>
+              <div className="content">
+                <button className="button" onClick={addToCart}>
+                    Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
+    </div>
     </div>
   );
 }
