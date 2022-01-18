@@ -13,7 +13,7 @@ import "./index.css";
 import { setContext } from "@apollo/client/link/context";
 import { StoreProvider } from "./utils/GlobalState";
 import Detail from './pages/Detail';
-import NoMatch from './pages/NoMatch';
+// import NoMatch from './pages/NoMatch';
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
@@ -54,11 +54,11 @@ function App() {
               <Route exact path="/example" element={<ExamplePage />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/signup" element={<Signup />} />
-              <Route exact path="/success" component={Success} />
+              <Route exact path="/success" element={<Success/>} />
               <Route exact path="/contact" element={<Contact />} />
-              <Route exact path="/products/:id" component={Detail} />
+              <Route exact path="/products/:id" element={<Detail/>} />
               <Route exact path="/menu" element={<Menu />} />
-              <Route component={NoMatch} />
+              {/* <Route element={<NoMatch/>} /> */}
             </Routes>
           </StoreProvider>
         </div>
