@@ -77,7 +77,6 @@ const userSchema = new Schema({
   //   },
   // ],
   // products: [Product.schema],
-  
 });
 
 // set up pre-save middleware to create password
