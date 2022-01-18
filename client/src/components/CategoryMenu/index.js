@@ -51,7 +51,7 @@ function CategoryMenu() {
             handleClick(item._id);
           }}
         >
-          {item.name}
+          {item.menuItem}
         </button>
       ))}
     </div>

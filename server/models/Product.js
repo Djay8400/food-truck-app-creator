@@ -11,7 +11,7 @@ const productSchema = new Schema({
   menuDescription: {
     type: String,
   },
-  productImage: {
+  image: {
     type: String,
   },
   price: {

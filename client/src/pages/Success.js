@@ -6,7 +6,7 @@ import { idbPromise } from '../utils/helpers';
 
 function Success() {
   const [addOrder] = useMutation(ADD_ORDER);
-
+    
   useEffect(() => {
     async function saveOrder() {
       const cart = await idbPromise('cart', 'get');

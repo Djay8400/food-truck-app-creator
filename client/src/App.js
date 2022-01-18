@@ -57,7 +57,7 @@ function App() {
               <Route exact path="/success" element={<Success/>} />
               <Route exact path="/contact" element={<Contact />} />
               <Route exact path="/products/:id" element={<Detail/>} />
-              <Route exact path="/menu" element={<Menu />} />
+              {/* <Route exact path="/menu" element={<Menu />} /> */}
               {/* <Route element={<NoMatch/>} /> */}
             </Routes>
           </StoreProvider>

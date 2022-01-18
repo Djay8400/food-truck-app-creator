@@ -17,7 +17,7 @@ const typeDefs = gql`
     _id: ID
     menuItem: String
     menuDescription: String
-    productImage: String
+    image: String
     price: Float
     category: Category
   }
