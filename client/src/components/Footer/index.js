@@ -29,6 +29,15 @@ function Footer() {
                 </a>
               </li>
               <li>
+                <a
+                  className="icon mt-2 footer__icon"
+                  href="https://github.com/Djay8400/food-truck-app-creator"
+                >
+                  <i className="uil uil-twitter"></i>
+                    Twitter
+                </a>
+              </li>
+              <li>
                 <a className="icon mt-2 footer__icon" href="/contact">
                   <i className="uil uil-envelope-upload"></i>
                   Email

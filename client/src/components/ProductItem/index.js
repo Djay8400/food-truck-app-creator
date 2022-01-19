@@ -44,17 +44,17 @@ function ProductItem(item) {
         </div>
         <div className="card-content">
           <div className="content is-centered">
-            <p className="title is-4 no-padding">{menuItem}</p>
+            <p className="title is-4 no-padding example__title">{menuItem}</p>
           </div>
 
           <div className="content">
-            <p>{menuDescription}</p>
+            <p className="example__subtitle">{menuDescription}</p>
           </div>
           <div className="content">
-            <p>${price}</p>
+            <p className="example__price">${price}</p>
           </div>
           <div className="content">
-            <button className="button" onClick={addToCart}>
+            <button className="button product__button" onClick={addToCart}>
               Add
             </button>
           </div>

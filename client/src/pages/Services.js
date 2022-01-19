@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { loadStripe } from "@stripe/stripe-js";
 import Auth from "../utils/auth";
 import StripeCheckout from "react-stripe-checkout";
+import FTFlogo from "../assets/FTFlogo.png";
 const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
 const Services = () => {
@@ -33,7 +34,9 @@ const Services = () => {
       <div className="section">
         <div className="columns">
           <div className="column has-text-centered">
-            <h1 className="services__title">FTF Services</h1>
+            <a className="home-dev__logo" href="../">
+            <img src={FTFlogo} alt="food-truck-fix logo" width={"150px"}></img>
+          </a>
           </div>
         </div>
         <div id="app" className="row columns is-multiline">
@@ -67,14 +70,14 @@ const Services = () => {
                       amount={10000}
                     >
                       <button className="button services__button">
-                        <Link to="/packageInput" className="services__button">
+                        <Link to="/packageInput" className="">
                           Purchase
                         </Link>
                       </button>
                     </StripeCheckout>
                   ) : (
                     <button className="button services__button">
-                      <Link to="/signup" className="services__button">
+                      <Link to="/signup">
                         Log In to View
                       </Link>
                     </button>
@@ -114,7 +117,7 @@ const Services = () => {
                       amount={20000}
                     >
                       <button className="button services__button">
-                        <Link to="/packageInput" className="services__button">
+                        <Link to="/packageInput" className="">
                           Purchase
                         </Link>
                       </button>
@@ -168,7 +171,7 @@ const Services = () => {
                     </StripeCheckout>
                   ) : (
                     <button className="button services__button">
-                      <Link to="/login" className="services__button">
+                      <Link to="/login" className="">
                         Log In to View
                       </Link>
                     </button>

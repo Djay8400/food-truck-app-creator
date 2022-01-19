@@ -13,10 +13,10 @@ export default function PackageInput() {
               Provide as much information as you wish. Business Name, Cuisine
               type, Menu items, Pricing, Options, etc.
             </p>
-            <div className="columns is-8 is-variable ">
+            <div className="columns is-8 is-variable level-item">
               <div className="column is-two-thirds has-text-left">
                 <form
-                  action="https://formsubmit.co/foodtruckfixco@gmail.com"
+                  action="https://formsubmit.co/6fccaa99427738bfd3f88f34e6bdd41f"
                   method="POST"
                   className="contact__form"
                 >
@@ -80,11 +80,11 @@ export default function PackageInput() {
                   </div>
                   <div className="field">
                     <label htmlFor="" className="contact__label">
-                      Menu Item #1 (Provide item name, description, price,
+                      Menu Item #2 (Provide item name, description, price,
                       customization options)
                     </label>
                     <textarea
-                      name="Menu Item #1"
+                      name="Menu Item #2"
                       id=""
                       cols="0"
                       rows="2"
@@ -94,11 +94,11 @@ export default function PackageInput() {
                   </div>
                   <div className="field">
                     <label htmlFor="" className="contact__label">
-                      Menu Item #1 (Provide item name, description, price,
+                      Menu Item #3 (Provide item name, description, price,
                       customization options)
                     </label>
                     <textarea
-                      name="Menu Item #1"
+                      name="Menu Item #3"
                       id=""
                       cols="0"
                       rows="2"

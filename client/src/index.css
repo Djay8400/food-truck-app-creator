@@ -178,6 +178,24 @@ img {
   background-color: var(--first-color-v2);
 }
 
+.example__title{
+  color: var(--first-color-alt-v2);
+}
+
+.example__subtitle{
+  color: var(--first-color-v2);
+}
+
+.example__price{
+  font-weight: var(--font-medium);
+}
+
+.product__button{
+  background-color: var(--first-color-second-v2);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
 .category__btn {
   margin: 0 0 var(--mb-0-25) 0;
   font-family: var(--body-font);
@@ -203,6 +221,7 @@ img {
 .services__subtitle {
   color: var(--first-color-second);
 }
+
 
 .services__button {
   background-color: var(--first-color-lighter);

@@ -34,7 +34,7 @@ export default function Contact() {
               </div>
               <div className="column is-one-third has-text-left">
                 <form
-                  action="https://formsubmit.co/foodtruckfixco@gmail.com"
+                  action="https://formsubmit.co/6fccaa99427738bfd3f88f34e6bdd41f"
                   method="POST"
                   className="contact__form"
                 >
