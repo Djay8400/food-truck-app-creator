@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react';
-import { useQuery } from '@apollo/client';
-import { useStoreContext } from '../../utils/GlobalState';
+import React, { useEffect } from "react";
+import { useQuery } from "@apollo/client";
+import { useStoreContext } from "../../utils/GlobalState";
 import {
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORY,
-} from '../../utils/actions';
-import { QUERY_CATEGORIES } from '../../utils/queries';
-import { idbPromise } from '../../utils/helpers';
+} from "../../utils/actions";
+import { QUERY_CATEGORIES } from "../../utils/queries";
+import { idbPromise } from "../../utils/helpers";
+import { Link } from "react-router-dom";
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -23,10 +24,10 @@ function CategoryMenu() {
       });
       //console.log(categories);
       categoryData.categories.forEach((category) => {
-        idbPromise('categories', 'put', category);
+        idbPromise("categories", "put", category);
       });
     } else if (!loading) {
-      idbPromise('categories', 'get').then((categories) => {
+      idbPromise("categories", "get").then((categories) => {
         dispatch({
           type: UPDATE_CATEGORIES,
           categories: categories,
@@ -43,17 +44,27 @@ function CategoryMenu() {
   };
 
   return (
-    <div className='container'>
+    <div className="container">
       <h2>Choose a Category:</h2>
+
+      <button
+        onClick={() => {
+          handleClick(window.location.reload());
+        }}
+        className="button is-rounded category__btn"
+      >
+        <strong>View All</strong>
+      </button>
+      
       {categories.map((item) => (
-        
-        <button className='button is-rounded category__btn'
+        <button
+          className="button is-rounded category__btn"
           key={item._id}
           onClick={() => {
             handleClick(item._id);
           }}
         >
-          {item.name}
+          <strong>{item.name}</strong>
         </button>
       ))}
     </div>

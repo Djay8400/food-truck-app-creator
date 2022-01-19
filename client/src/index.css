@@ -101,7 +101,7 @@ body.dark-theme{
   margin: 0 0 var(--mb-0-25) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--first-color-lighter);
+  background-color: var(--first-color-second);
 }
 
 .signup__hero{
@@ -113,6 +113,13 @@ body.dark-theme{
 
 .auth__title{
   font-size: var(--h1-font-size);
+}
+.example__container{
+  background-color: var(--first-color-lighter);
+}
+
+.example__page-logo{
+  
 }
 
 .services__title{

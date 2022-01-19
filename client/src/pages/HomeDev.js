@@ -1,5 +1,4 @@
 import React from "react";
-import truckImg from "../assets/foodtruck.jpg";
 // import FormCustomization from "../components/Form";
 // import FoodItem from "../components/FoodItem";
 // import Nav from "../components/Nav";
