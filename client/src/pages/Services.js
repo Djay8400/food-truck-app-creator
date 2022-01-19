@@ -75,7 +75,7 @@ const Services = () => {
                   ) : (
                     <button className="button services__button">
                       <Link to="/signup" className="services__button">
-                        Sign In to View
+                        Log In to View
                       </Link>
                     </button>
                   )}
@@ -122,7 +122,7 @@ const Services = () => {
                   ) : (
                     <button className="button services__button">
                       <Link to="/signup" services__button>
-                        Sign In to View
+                        Log In to View
                       </Link>
                     </button>
                   )}

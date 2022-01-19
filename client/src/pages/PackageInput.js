@@ -16,7 +16,7 @@ export default function PackageInput() {
             <div className="columns is-8 is-variable ">
               <div className="column is-two-thirds has-text-left">
                 <form
-                  action="https://formsubmit.co/1442d7a021f7f0c8eb82404a9f87ceb9"
+                  action="https://formsubmit.co/foodtruckfixco@gmail.com"
                   method="POST"
                   className="contact__form"
                 >
@@ -80,7 +80,7 @@ export default function PackageInput() {
                   </div>
                   <div className="field">
                     <label htmlFor="" className="contact__label">
-                      Menu Item #2 (Provide item name, description, price,
+                      Menu Item #1 (Provide item name, description, price,
                       customization options)
                     </label>
                     <textarea
@@ -94,7 +94,7 @@ export default function PackageInput() {
                   </div>
                   <div className="field">
                     <label htmlFor="" className="contact__label">
-                      Menu Item #3 (Provide item name, description, price,
+                      Menu Item #1 (Provide item name, description, price,
                       customization options)
                     </label>
                     <textarea
