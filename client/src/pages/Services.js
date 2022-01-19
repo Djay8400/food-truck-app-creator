@@ -48,10 +48,10 @@ const Services = () => {
               <div className="card-content">
                 <div className="media">
                   <div className="media-content">
-                    <p className="title is-4 no-padding">Standard Package</p>
+                    <p className="title is-4 no-padding services__subtitle">Standard Package</p>
                   </div>
                 </div>
-                <div className="content">
+                <div className="content services__content">
                   <p>This is what is provided with our Standard package.</p>
                 </div>
                 <div className="content">
@@ -65,13 +65,13 @@ const Services = () => {
                       name="Standard Package"
                       amount={10000}
                     >
-                      <button className="button">
-                        <Link to="/packageInput">Start Now</Link>
+                      <button className="button services__button">
+                        <Link to="/packageInput" className="services__button">Start Now</Link>
                       </button>
                     </StripeCheckout>
                   ) : (
-                    <button className="button">
-                      <Link to="/signup">Sign In to View</Link>
+                    <button className="button services__button">
+                      <Link to="/signup" className="services__button">Sign In to View</Link>
                     </button>
                   )}
                 </div>
@@ -88,10 +88,10 @@ const Services = () => {
               <div className="card-content">
                 <div className="media">
                   <div className="media-content">
-                    <p className="title is-4 no-padding">Deluxe Package</p>
+                    <p className="title is-4 no-padding services__subtitle">Deluxe Package</p>
                   </div>
                 </div>
-                <div className="content">
+                <div className="content services__content">
                   <p>This is what is provided with our Deluxe package.</p>
                 </div>
                 <div className="content">
@@ -104,13 +104,13 @@ const Services = () => {
                       name="Standard Package"
                       amount={10000}
                     >
-                      <button className="button">
-                        <Link to="/packageInput">Start Now</Link>
+                      <button className="button services__button">
+                        <Link to="/packageInput" className="services__button">Start Now</Link>
                       </button>
                     </StripeCheckout>
                   ) : (
-                    <button className="button">
-                      <Link to="/signup">Sign In to View</Link>
+                    <button className="button services__button">
+                      <Link to="/signup" services__button>Sign In to View</Link>
                     </button>
                   )}
                 </div>
@@ -127,10 +127,10 @@ const Services = () => {
               <div className="card-content">
                 <div className="media">
                   <div className="media-content">
-                    <p className="title is-4 no-padding">Premium Package</p>
+                    <p className="title is-4 no-padding services__subtitle">Premium Package</p>
                   </div>
                 </div>
-                <div className="content">
+                <div className="content services__content">
                   <p>This is what is provided with our Premium Package.</p>
                 </div>
                 <div className="content">
@@ -143,13 +143,13 @@ const Services = () => {
                       name="Standard Package"
                       amount={10000}
                     >
-                      <button className="button">
-                        <Link to="/packageInput">Start Now</Link>
+                      <button className="button services__button">
+                        <Link to="/packageInput" className="services__button">Start Now</Link>
                       </button>
                     </StripeCheckout>
                   ) : (
-                    <button className="button">
-                      <Link to="/login">Log In to View</Link>
+                    <button className="button services__button">
+                      <Link to="/login" className="services__button">Log In to View</Link>
                     </button>
                   )}
                 </div>

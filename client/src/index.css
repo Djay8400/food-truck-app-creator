@@ -199,8 +199,24 @@ img{
 .services__title{
   font-size: var(--h1-font-size);
   margin: 0 0 var(--header-height) 0;
+  color: var(--first-color-alt);
+}
+
+.services__subtitle{
   color: var(--first-color-second);
 }
+
+
+.services__button{
+  background-color: var(--first-color-lighter);
+  color: var(--first-color-third);
+  font-weight: 500;
+}
+
+.services__content{
+  color: var(--first-color-third);
+}
+
 /*========== HOME STYLES ==========*/
 .home-dev__hero{
   font-family: var(--body-font);
