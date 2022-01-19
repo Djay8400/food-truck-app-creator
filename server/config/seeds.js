@@ -76,6 +76,14 @@ db.once("open", async () => {
       image: "fruitCupPic.jpg",
       price: 7.99,
     },
+
+    {
+      menuItem: "Brisket Sandwich",
+      category: categories[0]._id,
+      menuDescription: "Juicy 	✓ Delicious 	✓  Hungry 	Yup ✓",
+      image: "BrisketBurger.jpg",
+      price: 12.99,
+    },
   ]);
 
   console.log("products seeded");
