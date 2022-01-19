@@ -70,7 +70,7 @@ const Services = () => {
                       amount={10000}
                     >
                       <button className="button services__button">
-                        <Link to="/packageInput" className="">
+                        <Link to="/packageInput" className="services__button">
                           Purchase
                         </Link>
                       </button>
@@ -117,7 +117,7 @@ const Services = () => {
                       amount={20000}
                     >
                       <button className="button services__button">
-                        <Link to="/packageInput" className="">
+                        <Link to="/packageInput" className="services__button">
                           Purchase
                         </Link>
                       </button>

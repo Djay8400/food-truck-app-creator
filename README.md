@@ -15,7 +15,6 @@
 #### Table of Contents
 
 1. [Project Description](#project-description)
-1. [Usage](#usage)
 2. [Installation Instructions](#installation-instructions)
 3. [Collaborating](#collaborating)
 4. [Questions](#questions)
@@ -24,9 +23,6 @@
 
 - A MERN Stack application that allows for everyday food truck owners to create their own custom application that helps enhance their bussiness. Food truck owners will have the ability to add menu items, customize order experience, and change prices with ease.
 
-## Usage
-
-[Demo App!](https://food-truck-fix.herokuapp.com/)
 
 ## Installation Instructions
 
