@@ -5,16 +5,6 @@ const bcrypt = require("bcrypt");
 const Order = require("./Order");
 
 const userSchema = new Schema({
-  firstName: {
-    type: String,
-    // required: true,
-    trim: true,
-  },
-  lastName: {
-    type: String,
-    // required: true,
-    trim: true,
-  },
   username: {
     type: String,
     // required: true,
@@ -32,51 +22,12 @@ const userSchema = new Schema({
     // required: true,
     minlength: 5,
   },
-  businessName: {
+  confirmPassword: {
     type: String,
     // required: true,
-    trim: true,
-  },
-  homeAddress: {
-    type: String,
-    // required: true,
-    trim: true,
-  },
-
-  city: {
-    type: String,
-    // required: true,
-    trim: true,
-  },
-
-  state: {
-    type: String,
-    // required: true,
-    trim: true,
-  },
-
-  zipCode: {
-    type: String,
-    trim: true,
-  },
-
-  primaryColor: {
-    type: String,
-
-    trim: true,
-  },
-  logo: {
-    type: String,
-    // imageURL: String,
+    minlength: 5,
   },
   orders: [Order.schema],
-  // orders: [
-  //   {
-  //     type: Schema.Types.ObjectId,
-  //     ref: "Order",
-  //   },
-  // ],
-  // products: [Product.schema],
 });
 
 // set up pre-save middleware to create password
@@ -85,7 +36,6 @@ userSchema.pre("save", async function (next) {
     const saltRounds = 10;
     this.password = await bcrypt.hash(this.password, saltRounds);
   }
-
   next();
 });
 
@@ -93,6 +43,7 @@ userSchema.pre("save", async function (next) {
 userSchema.methods.isCorrectPassword = async function (password) {
   return await bcrypt.compare(password, this.password);
 };
+
 
 const User = mongoose.model("User", userSchema);
 

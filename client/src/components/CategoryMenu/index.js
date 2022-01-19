@@ -45,7 +45,7 @@ function CategoryMenu() {
 
   return (
     <div className="container">
-      <h2>Choose a Category:</h2>
+      <h2 className="category__title">Choose a Category:</h2>
 
       <button
         onClick={() => {
@@ -55,7 +55,7 @@ function CategoryMenu() {
       >
         <strong>View All</strong>
       </button>
-      
+
       {categories.map((item) => (
         <button
           className="button is-rounded category__btn"

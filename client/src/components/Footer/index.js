@@ -38,12 +38,17 @@ function Footer() {
           </div>
           <div className="column is-3">
             <h2 className="footer__title">
-              <strong>Careers</strong>
+              <strong>Resources</strong>
             </h2>
             <ul>
               <li>
+                <a className="footer__icon mt-2" href="/updatesAhead">
+                  2022: Updates Ahead
+                </a>
+              </li>
+              <li>
                 <a className="footer__icon mt-2" href="/contact">
-                  Apply
+                  Career Opportunities
                 </a>
               </li>
             </ul>

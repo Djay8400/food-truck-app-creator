@@ -1,16 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
@@ -18,10 +5,15 @@ code {
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
-    /*========== Colors ==========*/
-    --hue-color: 215; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-
+    /*========== COLOR FOR EXAMPLE PAGE==========*/
+    --hue-color-second: 5;
+    --first-color-v2: hsl(var(--hue-color-second), 69%, 61%);
+    --first-color-second-v2: hsl(var(--hue-color-second), 69%, 70%);
+    --first-color-third-v2: hsl(var(--hue-color-second), 50%, 25%);
+    --first-color-alt-v2: hsl(var(--hue-color-second), 57%, 53%);
+    /*========== COLOR FOR ALL OTHER PAGES==========*/
     /* HSL color mode */
+    --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 70%);
     --first-color-third: hsl(var(--hue-color), 50%, 25%);
@@ -185,26 +177,46 @@ img{
 
 /*========== EXAMPLE STYLES ==========*/
 .example__container{
-  background-color: var(--first-color-lighter);
+  background-color: var(--first-color-v2);
 }
 
 .category__btn{
   margin: 0 0 var(--mb-0-25) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--first-color-second);
+  background-color: var(--first-color-second-v2);
 }
 
-/*========== SSERVICES STYLES ==========*/
+.category__title{
+  color: var(--first-color-third-v2);
+}
+
+.product-list__title{
+  color: var(--first-color-third-v2);
+  font-size: var(--h2-font-size);
+}
+/*========== SERVICES STYLES ==========*/
 .services__title{
   font-size: var(--h1-font-size);
   margin: 0 0 var(--header-height) 0;
+  color: var(--first-color-second);
 }
 /*========== HOME STYLES ==========*/
 .home-dev__hero{
-  margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
-  background-color: var(--first-color);
+  background-color: var(--first-color-second);
+}
+
+.home-card__title h4{
+  color: var(--first-color-alt);
+}
+
+.home-card__title{
+  color: var(--first-color-second);
+}
+
+.home-card__link {
+  color: var(--first-color-alt);
 }
 
 .home-dev__title{
@@ -225,7 +237,14 @@ img{
 }
 
 
+
 /*========== NAV STYLES ==========*/
+
+
+.nav__item{
+  color: var(--first-color-second);
+}
+
 .nav__icon{
   font-size: 2rem;
 }
@@ -268,6 +287,20 @@ img{
   row-gap: 3rem;
 }
 
+.contact__title{
+  color: var(--first-color-second);
+}
+
+.contact__subtitle{
+  color: var(--first-color-second);
+}
+
+.contact__button{
+  background-color: var(--first-color-lighter);
+  color: var(--first-color-third);
+  font-weight: 500;
+}
+
 .contact__info{
   display: flex;
   margin-bottom: var(--mb-2);
@@ -286,7 +319,7 @@ img{
 
 .contact__subtitle{
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  color: var(--first-color-lighter);
 }
 
 .contact__content{
@@ -311,6 +344,14 @@ img{
   outline: none;
   padding: .25rem .5rem .5rem 0;
 }
+
+
+/* UPDATES AHEAD STYLES */
+.updates-ahead__title{
+  color: var(--first-color-second);
+}
+
+
 /* small devices */
 @media screen and (min-width: 350px) {
   .home-dev__hero{

@@ -9,7 +9,9 @@ function Signup(props) {
     username: "",
     email: "",
     password: "",
+    confirmPassword: "",
   });
+
 
   const [addUser, { error }] = useMutation(ADD_USER);
 
@@ -21,6 +23,7 @@ function Signup(props) {
         username: formState.username,
         email: formState.email,
         password: formState.password,
+        confirmPassword: formState.confirmPassword,
       },
     });
     console.log(mutationResponse);
@@ -36,6 +39,8 @@ function Signup(props) {
       [name]: value,
     });
   };
+ 
+
 
   return (
     <section className="hero is-fullheight">
@@ -114,10 +119,10 @@ function Signup(props) {
                   </label>
                   <div className="control has-icons-left">
                     <input
-                      name="password"
+                      name="confirmPassword"
                       onChange={handleChange}
                       type="password"
-                      id="password"
+                      id="confirmPassword"
                       placeholder="*******"
                       className="input"
                       required
@@ -136,7 +141,10 @@ function Signup(props) {
         </div>
       </div>
     </section>
+  
+
   );
 }
+
 
 export default Signup;

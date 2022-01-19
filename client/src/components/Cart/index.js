@@ -105,7 +105,7 @@ const Cart = () => {
       <div className="close" onClick={toggleCart}>
         [close]
       </div>
-      <h2>Shopping Cart</h2>
+      <h2 className='cart__title'>Shopping Cart</h2>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -125,7 +125,7 @@ const Cart = () => {
                   amount={calculateTotal()*100}
                 >
                   <div className="container">
-                    <button className="button is-primary">
+                    <button className="button cart__button">
                       Get Some Grub!
                     </button>
                   </div>

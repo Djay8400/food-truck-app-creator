@@ -36,7 +36,7 @@ function ProductItem(item) {
 
   return (
     <div className="column is-4">
-      <div className="card large">
+      <div className="card">
         <div className="card-image">
           <figure className="image is 16by9">
             <img alt={menuItem} src={`/images/${image}`} />

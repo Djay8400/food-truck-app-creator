@@ -44,6 +44,16 @@
   height: 50px;
 }
 
+.cart__button{
+  background-color: var(--first-color-second-v2);
+  color: var(--first-color-third);
+  font-weight: 500;
+}
+
+.cart__title{
+  color: black;
+}
+
 .cart-closed:hover {
   transform: rotate(16deg);
 }

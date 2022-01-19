@@ -3,7 +3,7 @@ import FTFlogo from "../assets/FTFlogo.png";
 import "../index.css"
 const HomeDev = () => {
   return (
-    <div>
+    <div className="">
       <section className="hero home-dev__hero is-small is-bold">
         <div className="hero-head">
           <a className="home-dev__logo" href="../">
@@ -30,14 +30,14 @@ const HomeDev = () => {
                 <i className="uil uil-check nav__icon"></i>
               </div>
               <div className="card-content">
-                <div className="content">
-                  <h4>Simple</h4>
+                <div className="content home-card__title">
+                  <h4 className="home-card__title">Simple</h4>
                   <p>
                     FTF's user-friendly interface allows even first time users
                     to quickly get an application deployed in no time.
                   </p>
                   <p>
-                    <a href="#">Learn more</a>
+                    <a href="#" className="home-card__link">Learn more</a>
                   </p>
                 </div>
               </div>
@@ -49,13 +49,13 @@ const HomeDev = () => {
                 <i className="uil uil-dollar-alt nav__icon"></i>
               </div>
               <div className="card-content">
-                <div className="content">
+                <div className="content home-card__title">
                   <h4>Affordable</h4>
                   <p>
                     FTF is very affordable for small business owners. Different packages are available for a one time purchase.
                   </p>
                   <p>
-                    <a href="#">Learn more</a>
+                    <a href="#" className="home-card__link">Learn more</a>
                   </p>
                 </div>
               </div>
@@ -67,14 +67,14 @@ const HomeDev = () => {
                 <i className="uil uil-lightbulb-alt nav__icon"></i>
               </div>
               <div className="card-content">
-                <div className="content">
+                <div className="content home-card__title">
                   <h4>Ingenious</h4>
                   <p>
                     While maintaing its simplicity, FTF allows you to get as
                     complex as you want in your customization.
                   </p>
                   <p>
-                    <a href="#">Learn more</a>
+                    <a href="#" className="home-card__link">Learn more</a>
                   </p>
                 </div>
               </div>

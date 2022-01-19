@@ -10,31 +10,25 @@ export default function Contact() {
           <div className="container has-text-centered">
             <div className="columns is-8 is-variable ">
               <div className="column is-two-thirds has-text-left">
-                <h1 className="title is-1">Contact Us</h1>
-                <p className="is-size-4">
+                <h1 className="title is-1 contact__title">Contact Us</h1>
+                <p className="is-size-4 contact__subtitle">
                   Send us an email and we will get back to you.
                 </p>
                 <div className="social-media">
                   <a
                     href="https://facebook.com"
                     target="_blank"
-                    className="button is-light is-large"
+                    className="button signup__button is-large mr-1"
                   >
-                    <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i className="uil uil-facebook"></i>
                   </a>
-                  <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    className="button is-light is-large"
-                  >
-                    <i className="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
+                  
                   <a
                     href="https://twitter.com"
                     target="_blank"
-                    className="button is-light is-large"
+                    className="button signup__button is-large"
                   >
-                    <i className="fa fa-twitter" aria-hidden="true"></i>
+                    <i className="uil uil-twitter" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
@@ -92,7 +86,7 @@ export default function Contact() {
                   ></textarea>
                 </div>
                 <div className="control">
-                  <button type="submit" className="button button--flex">
+                  <button type="submit" className="button contact__button">
                     Send Message
                     <i className="uil uil-message button__icon"></i>
                   </button>

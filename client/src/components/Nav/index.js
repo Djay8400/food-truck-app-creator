@@ -10,7 +10,7 @@ function Nav() {
           <div className="navbar-item">
             <div className="buttons">
               <div className="button nav__button">
-                <a href="/" onClick={() => Auth.logout()}>
+                <a href="/"  className="nav__button" onClick={() => Auth.logout()}>
                   Logout
                 </a>
               </div>
@@ -40,15 +40,14 @@ function Nav() {
 
   return (
     <nav
-      className="navbar has-background-light"
+      className="navbar has-background-light mb-3"
       role="navigation"
       aria-label="main navigation navbar-is-dark"
-      style={{ fontWeight: "bolder", color: "royalblue" }}
       // style={{ backgroundColor: "#EAC435" }}
     >
       <div className="navbar-brand">
-        <div className="navbar-item">
-          <Link to="/">
+        <div className="navbar-item nav__item">
+          <Link to="/" className="nav__item">
             <i className="uil uil-truck mr-.5"></i>FTF
           </Link>
         </div>
@@ -70,13 +69,13 @@ function Nav() {
       <div id="navbar" className="navbar-menu">
         <div className="navbar-start">
           <div className="navbar-item">
-            <Link to="/example">Example Page</Link>
+            <Link to="/example" className="nav__item">Example Page</Link>
           </div>
           <div className="navbar-item">
-            <Link to="/services">Services</Link>
+            <Link to="/services" className="nav__item">Services</Link>
           </div>
           <div className="navbar-item">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" className="nav__item">Contact</Link>
           </div>
 
         </div>
