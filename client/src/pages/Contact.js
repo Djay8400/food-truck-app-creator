@@ -16,7 +16,7 @@ export default function Contact() {
                 </p>
                 <div className="social-media">
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/Food-Truck-Fix-102433449016196"
                     target="_blank"
                     className="button signup__button is-large mr-1"
                   >
@@ -24,7 +24,7 @@ export default function Contact() {
                   </a>
 
                   <a
-                    href="https://twitter.com"
+                    href="https://twitter.com/foodtruckfixco"
                     target="_blank"
                     className="button signup__button is-large"
                   >
