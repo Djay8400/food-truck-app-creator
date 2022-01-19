@@ -41,7 +41,7 @@ const Services = () => {
             <div className="card large">
               <div className="card-image">
                 <figure className="image is-16by9">
-                  <img src="./images/standard.png" alt="" />
+                  <img src="./images/standardPlan.jpg" alt="" />
                 </figure>
               </div>
               <div className="card-content">
@@ -83,11 +83,11 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div v-for="card in cardData"className="column is-4">
+          <div v-for="card in cardData" className="column is-4">
             <div className="card large">
               <div className="card-image">
                 <figure className="image is-16by9">
-                  <img src="./images/deluxe.png" alt="" />
+                  <img src="./images/deluxePlan.png" alt="" />
                 </figure>
               </div>
               <div className="card-content">
@@ -134,7 +134,7 @@ const Services = () => {
             <div className="card large">
               <div className="card-image">
                 <figure className="image is-16by9">
-                  <img src="./images/premium.jpg" alt="" />
+                  <img src="./images/premiumPlan.jpg" alt="" />
                 </figure>
               </div>
               <div className="card-content">
