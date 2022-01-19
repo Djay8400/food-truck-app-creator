@@ -10,7 +10,11 @@ function Nav() {
           <div className="navbar-item">
             <div className="buttons">
               <div className="button nav__button">
-                <a href="/"  className="nav__button" onClick={() => Auth.logout()}>
+                <a
+                  href="/"
+                  className="nav__button"
+                  onClick={() => Auth.logout()}
+                >
                   Logout
                 </a>
               </div>
@@ -24,7 +28,9 @@ function Nav() {
           <div className="navbar-item">
             <div className="buttons">
               <div className="button nav__button">
-                <Link to="/signup" className="nav__button">Signup</Link>
+                <Link to="/signup" className="nav__button">
+                  Signup
+                </Link>
               </div>
               <div className="button nav__button">
                 <Link to="/login" className="nav__button">
@@ -48,7 +54,8 @@ function Nav() {
       <div className="navbar-brand">
         <div className="navbar-item nav__item">
           <Link to="/" className="nav__item">
-            <i className="uil uil-truck mr-.5"></i>FTF
+            <i className="uil uil-truck mr-.5"></i>
+            <strong>FTF</strong>
           </Link>
         </div>
 
@@ -69,15 +76,20 @@ function Nav() {
       <div id="navbar" className="navbar-menu">
         <div className="navbar-start">
           <div className="navbar-item">
-            <Link to="/example" className="nav__item">Example Page</Link>
+            <Link to="/example" className="nav__item">
+              Example
+            </Link>
           </div>
           <div className="navbar-item">
-            <Link to="/services" className="nav__item">Services</Link>
+            <Link to="/services" className="nav__item">
+              Services
+            </Link>
           </div>
           <div className="navbar-item">
-            <Link to="/contact" className="nav__item">Contact</Link>
+            <Link to="/contact" className="nav__item">
+              Contact
+            </Link>
           </div>
-
         </div>
       </div>
       <div>{showNavigation()}</div>

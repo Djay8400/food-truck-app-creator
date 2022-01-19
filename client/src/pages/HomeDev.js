@@ -1,6 +1,6 @@
 import React from "react";
 import FTFlogo from "../assets/FTFlogo.png";
-import "../index.css"
+import "../index.css";
 const HomeDev = () => {
   return (
     <div className="">
@@ -16,7 +16,7 @@ const HomeDev = () => {
               Looking to take your business to the next level?
             </h1>
             <h2 className="home-dev__subtitle">
-              Setup your very own application with Food Truck Fix.
+              Setup your very own mobile app with Food Truck Fix.
             </h2>
           </div>
         </div>
@@ -37,7 +37,9 @@ const HomeDev = () => {
                     to quickly get an application deployed in no time.
                   </p>
                   <p>
-                    <a href="#" className="home-card__link">Learn more</a>
+                    <a href="#" className="home-card__link">
+                      Learn more
+                    </a>
                   </p>
                 </div>
               </div>
@@ -52,10 +54,13 @@ const HomeDev = () => {
                 <div className="content home-card__title">
                   <h4>Affordable</h4>
                   <p>
-                    FTF is very affordable for small business owners. Different packages are available for a one time purchase.
+                    FTF is very affordable for small business owners. Different
+                    packages are available for a one time purchase.
                   </p>
                   <p>
-                    <a href="#" className="home-card__link">Learn more</a>
+                    <a href="#" className="home-card__link">
+                      Learn more
+                    </a>
                   </p>
                 </div>
               </div>
@@ -74,7 +79,9 @@ const HomeDev = () => {
                     complex as you want in your customization.
                   </p>
                   <p>
-                    <a href="#" className="home-card__link">Learn more</a>
+                    <a href="#" className="home-card__link">
+                      Learn more
+                    </a>
                   </p>
                 </div>
               </div>
