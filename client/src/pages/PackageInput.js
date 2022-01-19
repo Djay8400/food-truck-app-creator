@@ -8,8 +8,8 @@ export default function PackageInput() {
       <section className="hero is-fullheight">
         <div className="hero-body">
           <div className="container has-text-centered">
-            <h1 className="title is-1">Customize your app</h1>
-            <p className="is-size-5">
+            <h1 className="title is-1 package__title">Customize your app</h1>
+            <p className="is-size-5 package__subtitle">
               Provide as much information as you wish. Business Name, Cuisine
               type, Menu items, Pricing, Options, etc.
             </p>
@@ -120,7 +120,7 @@ export default function PackageInput() {
                     ></textarea>
                   </div>
                   <div className="control">
-                    <button type="submit" className="button button--flex">
+                    <button type="submit" className="button package__button">
                       Submit
                       <i className="uil uil-message button__icon"></i>
                     </button>

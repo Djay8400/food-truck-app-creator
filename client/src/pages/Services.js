@@ -83,7 +83,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div v-for="card in cardData" key="card.id" className="column is-4">
+          <div v-for="card in cardData"className="column is-4">
             <div className="card large">
               <div className="card-image">
                 <figure className="image is-16by9">

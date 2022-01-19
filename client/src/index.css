@@ -266,16 +266,20 @@ img {
   color: var(--first-color-third);
 }
 
-.change-theme {
-  font-size: 1.25rem;
-  color: var(--title-color);
-  margin-right: var(--mb-1);
-  cursor: pointer;
+/*========== PACKAGE INPUT STYLES ==========*/
+.package__button{
+  background-color: var(--first-color-lighter);
+  color: var(--first-color-third);
 }
 
-.change-theme:hover {
-  color: var(--first-color);
+.package__title{
+  color: var(--first-color-alt);
 }
+
+.package__subtitle{
+  color: var(--first-color-second);
+}
+
 /* FOOTER  STYLES */
 .footer {
   background-color: var(--first-color-lighter);
