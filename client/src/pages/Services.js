@@ -41,7 +41,7 @@ const Services = () => {
             <div className="card large">
               <div className="card-image">
                 <figure className="image is-16by9">
-                  <img src="./images/servicesImg1.jpg" alt="" />
+                  <img src="./images/standard.png" alt="" />
                 </figure>
               </div>
               <div className="card-content">
@@ -52,9 +52,9 @@ const Services = () => {
                 </div>
 
                 <div className="content services__content">
-                  <p>1.) Fully functioning payment processing</p>
-                  <p>2.) 10 Menu items with fully custom cards</p>
-                  <p>3.) One month subscription to FTF</p>
+                  <p>* Fully functioning payment processing</p>
+                  <p>* 10 Menu items with fully custom cards</p>
+                  <p>* One month subscription to FTF</p>
                 </div>
                 <div className="content">
                   {Auth.loggedIn() ? (
@@ -87,7 +87,7 @@ const Services = () => {
             <div className="card large">
               <div className="card-image">
                 <figure className="image is-16by9">
-                  <img src="./images/servicesImg2.jpg" alt="" />
+                  <img src="./images/deluxe.png" alt="" />
                 </figure>
               </div>
               <div className="card-content">
@@ -98,10 +98,10 @@ const Services = () => {
                 </div>
 
                 <div className="content services__content">
-                  <p>1.) Fully functioning payment processing</p>
-                  <p>2.) 15 Menu items with fully custom cards</p>
-                  <p>3.) Customized Logo and QR codes</p>
-                  <p>4.) Three months subscription to FTF</p>
+                  <p>* Includes everything from Standard Package, Plus</p>
+                  <p>* 5 extra Menu items with fully custom cards</p>
+                  <p>* Customized Logo and QR codes</p>
+                  <p>* Three months subscription to FTF</p>
                 </div>
                 <div className="content">
                   {Auth.loggedIn() ? (
@@ -134,7 +134,7 @@ const Services = () => {
             <div className="card large">
               <div className="card-image">
                 <figure className="image is-16by9">
-                  <img src="./images/servicesImg3.gif" alt="" />
+                  <img src="./images/premium.jpg" alt="" />
                 </figure>
               </div>
               <div className="card-content">
@@ -145,10 +145,10 @@ const Services = () => {
                 </div>
 
                 <div className="content services__content">
-                  <p>1.) Fully functioning payment processing</p>
-                  <p>2.) 30 Menu items with fully custom cards</p>
-                  <p>3.) Customized Logo and QR codes</p>
-                  <p>4.) One year subscription to FTF</p>
+                  <p>* Includes everything from Deluxe Package, Plus</p>
+                  <p>* 20 Extra Menu items with fully custom cards</p>
+                  <p>* Social Media Integration with location bursts</p>
+                  <p>* One year subscription to FTF</p>
                 </div>
                 <div className="content">
                   {Auth.loggedIn() ? (

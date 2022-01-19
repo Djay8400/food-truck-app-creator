@@ -2,7 +2,7 @@ import React from "react";
 import Cart from "../components/Cart";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
-import yourLogoHere from "../assets/exampleLogo.png";
+import yourLogoHere from "../assets/your-logo-here.png";
 
 const ExamplePage = () => {
   return (
