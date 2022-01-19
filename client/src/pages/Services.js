@@ -30,7 +30,6 @@ const Services = () => {
 
   return (
     <div className="container">
-
       <div className="section">
         <div className="columns">
           <div className="column has-text-centered">
@@ -46,16 +45,18 @@ const Services = () => {
                 </figure>
               </div>
               <div className="card-content">
-                <div className="media">
-                  <div className="media-content">
-                    <p className="title is-4 no-padding services__subtitle">Standard Package</p>
-                  </div>
+                <div className="content">
+                  <p className="title is-4 no-padding services__subtitle">
+                    Standard Package
+                  </p>
                 </div>
+
                 <div className="content services__content">
-                  <p>This is what is provided with our Standard package.</p>
+                  <p>1.) Fully functioning payment processing</p>
+                  <p>2.) 10 Menu items with fully custom cards</p>
+                  <p>3.) One month subscription to FTF</p>
                 </div>
                 <div className="content">
-                  {/* // Here we will Link to our page with form fields to create FoodTruck */}
                   {Auth.loggedIn() ? (
                     <StripeCheckout
                       stripeKey={
@@ -66,12 +67,16 @@ const Services = () => {
                       amount={10000}
                     >
                       <button className="button services__button">
-                        <Link to="/packageInput" className="services__button">Start Now</Link>
+                        <Link to="/packageInput" className="services__button">
+                          Purchase
+                        </Link>
                       </button>
                     </StripeCheckout>
                   ) : (
                     <button className="button services__button">
-                      <Link to="/signup" className="services__button">Sign In to View</Link>
+                      <Link to="/signup" className="services__button">
+                        Sign In to View
+                      </Link>
                     </button>
                   )}
                 </div>
@@ -86,31 +91,39 @@ const Services = () => {
                 </figure>
               </div>
               <div className="card-content">
-                <div className="media">
-                  <div className="media-content">
-                    <p className="title is-4 no-padding services__subtitle">Deluxe Package</p>
-                  </div>
+                <div className="content">
+                  <p className="title is-4 no-padding services__subtitle">
+                    Deluxe Package
+                  </p>
                 </div>
+
                 <div className="content services__content">
-                  <p>This is what is provided with our Deluxe package.</p>
+                  <p>1.) Fully functioning payment processing</p>
+                  <p>2.) 15 Menu items with fully custom cards</p>
+                  <p>3.) Customized Logo and QR codes</p>
+                  <p>4.) Three months subscription to FTF</p>
                 </div>
                 <div className="content">
-                {Auth.loggedIn() ? (
+                  {Auth.loggedIn() ? (
                     <StripeCheckout
                       stripeKey={
                         "pk_test_51KHBZnDLG1yx92htZ80kTOdpuI3muXW2c11aYwghcctZ8Av6TM3BNrzkVqrytVsPS7g11fRnPiMi5LvWbTKNCvfI00pcq75slU"
                       }
                       token={makePayment}
-                      name="Standard Package"
-                      amount={10000}
+                      name="Deluxe Package"
+                      amount={20000}
                     >
                       <button className="button services__button">
-                        <Link to="/packageInput" className="services__button">Start Now</Link>
+                        <Link to="/packageInput" className="services__button">
+                          Purchase
+                        </Link>
                       </button>
                     </StripeCheckout>
                   ) : (
                     <button className="button services__button">
-                      <Link to="/signup" services__button>Sign In to View</Link>
+                      <Link to="/signup" services__button>
+                        Sign In to View
+                      </Link>
                     </button>
                   )}
                 </div>
@@ -125,31 +138,39 @@ const Services = () => {
                 </figure>
               </div>
               <div className="card-content">
-                <div className="media">
-                  <div className="media-content">
-                    <p className="title is-4 no-padding services__subtitle">Premium Package</p>
-                  </div>
+                <div className="content">
+                  <p className="title is-4 no-padding services__subtitle">
+                    Premium Package
+                  </p>
                 </div>
+
                 <div className="content services__content">
-                  <p>This is what is provided with our Premium Package.</p>
+                  <p>1.) Fully functioning payment processing</p>
+                  <p>2.) 30 Menu items with fully custom cards</p>
+                  <p>3.) Customized Logo and QR codes</p>
+                  <p>4.) One year subscription to FTF</p>
                 </div>
                 <div className="content">
-                {Auth.loggedIn() ? (
+                  {Auth.loggedIn() ? (
                     <StripeCheckout
                       stripeKey={
                         "pk_test_51KHBZnDLG1yx92htZ80kTOdpuI3muXW2c11aYwghcctZ8Av6TM3BNrzkVqrytVsPS7g11fRnPiMi5LvWbTKNCvfI00pcq75slU"
                       }
                       token={makePayment}
-                      name="Standard Package"
-                      amount={10000}
+                      name="Premium Package"
+                      amount={30000}
                     >
                       <button className="button services__button">
-                        <Link to="/packageInput" className="services__button">Start Now</Link>
+                        <Link to="/packageInput" className="services__button">
+                          Purchase
+                        </Link>
                       </button>
                     </StripeCheckout>
                   ) : (
                     <button className="button services__button">
-                      <Link to="/login" className="services__button">Log In to View</Link>
+                      <Link to="/login" className="services__button">
+                        Log In to View
+                      </Link>
                     </button>
                   )}
                 </div>

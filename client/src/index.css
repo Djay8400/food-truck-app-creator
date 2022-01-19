@@ -215,6 +215,8 @@ img{
 
 .services__content{
   color: var(--first-color-third);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
 }
 
 /*========== HOME STYLES ==========*/
