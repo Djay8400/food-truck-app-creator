@@ -58,6 +58,11 @@ function Nav() {
             <strong>FTF</strong>
           </Link>
         </div>
+        <div className="navbar-item">
+          <Link to="/example" className="nav__item">
+            Example
+          </Link>
+        </div>
 
         <a
           role="button"
@@ -75,11 +80,6 @@ function Nav() {
 
       <div id="navbar" className="navbar-menu">
         <div className="navbar-start">
-          <div className="navbar-item">
-            <Link to="/example" className="nav__item">
-              Example
-            </Link>
-          </div>
           <div className="navbar-item">
             <Link to="/services" className="nav__item">
               Services
