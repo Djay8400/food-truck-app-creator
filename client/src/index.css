@@ -18,7 +18,6 @@ code {
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
-    --hero-img: background-image: url('./assets/foodtruck.jpg');
     /*========== Colors ==========*/
     --hue-color: 215; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 

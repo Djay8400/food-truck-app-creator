@@ -16,6 +16,7 @@ import Detail from "./pages/Detail";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import ExamplePage from "./pages/ExamplePage";
 import Success from "./pages/Success";
 import Contact from "./pages/Contact";
@@ -60,6 +61,7 @@ function App() {
               <Route exact path="/packageInput" element={<PackageInput />} />
               {/* <Route element={<NoMatch/>} /> */}
             </Routes>
+            <Footer />
           </StoreProvider>
         </div>
       </Router>
