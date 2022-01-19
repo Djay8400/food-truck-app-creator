@@ -23,7 +23,8 @@ code {
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 70%);
+    --first-color-third: hsl(var(--hue-color), 50%, 25%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -94,119 +95,6 @@ body.dark-theme{
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
-/*========== Button Dark/Light ==========*/
-
-.category__btn{
-  margin: 0 0 var(--mb-0-25) 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--first-color-second);
-}
-/*========== SignUp Styles ==========*/
-.signup__hero{
-  margin: 0 0 var(--header-height) 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--first-color);
-}
-/*========== Login Styles ==========*/
-.login__hero{
-  margin: 0 0 var(--header-height) 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--first-color);
-}
-
-.auth__title{
-  font-size: var(--h1-font-size);
-}
-.example__container{
-  background-color: var(--first-color-lighter);
-}
-/*========== Login Styles ==========*/
-.services__title{
-  font-size: var(--h1-font-size);
-  margin: 0 0 var(--header-height) 0;
-}
-/*========== Home Styles ==========*/
-.home-dev__hero{
-  margin: 0 0 var(--header-height) 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--first-color);
-}
-
-/* .home-dev__hero::before{
-  content: "";
-  background-image: url('./assets/foodtruck.jpg');
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.6;
-
-} */
-
-.home-dev__title{
-  position: relative;
-  font-size: var(--big-font-size);
-  color: #fff;
-  text-shadow: 2px 2px black;
-}
-
-.home-dev__subtitle{
-  font-size: var(--h2-font-size);
-  color: #000000;
-  text-shadow: .3x .3px white;
-  
-}
-
-.home-dev__logo{
-  position: relative;
-}
-
-.home-dev__features{
-  background-color: var(--first-color-lighter);
-  border-radius: 10px 10px;
-  margin-right: 1rem;
-}
-
-
-.home-dev__features:hover{
-  background-color: var(--first-color);
-  transform: scale(1.05);
-  border-radius: 10px 10px;
-  margin-right: 1rem;
-}
-/*========== Nav Styles ==========*/
-.nav__icon{
-  font-size: 2rem;
-}
-
-.nav__qr{
- font-size: 5rem;
-}
-
-.nav__btns{
-  display: flex;
-  align-items: center;
-}
-
-.change-theme{
-  font-size: 1.25rem;
-  color: var(--title-color);
-  margin-right: var(--mb-1);
-  cursor: pointer;
-}
-
-.change-theme:hover{
-  color: var(--first-color);
-}
-/* FOOTER */
-.home-dev__footer{
-  /* background-color: var(--first-color-lighter); */
-}
 /*==================== BASE ====================*/
 *{
   box-sizing: border-box;
@@ -227,7 +115,7 @@ body{
 }
 
 h1,h2,h3,h4{
-  color: var(--title-color);
+  color: var(--first-color-lighter);
   font-weight: var(--font-semi-bold);
 }
 
@@ -244,7 +132,138 @@ img{
   height: auto;
 }
 
-/*==================== CONTACT ME ====================*/
+
+
+/*========== SignUp Styles ==========*/
+.signup__container{
+  margin: 0 0 var(--mb-2) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--first-color);
+}
+
+.signup__title h1{
+  font-size: var(--h1-font-size);
+  color: var(--first-color-third)
+}
+.signup__label{
+  color: var(--first-color);
+}
+
+.signup__button{
+  background-color: var(--first-color-lighter);
+  color: var(--first-color-third);
+  font-weight: 500;
+}
+/*========== Login Styles ==========*/
+.login__hero{
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--first-color);
+}
+
+.login__title h1{
+  font-size: var(--h1-font-size);
+  color: var(--first-color-third)
+}
+.login__label{
+  color: var(--first-color);
+}
+
+.login__button{
+  background-color: var(--first-color-lighter);
+  color: var(--first-color-third);
+  font-weight: 500;
+}
+
+.login__checkbox{
+  color: var(--first-color-third);
+  font-weight: 400;
+}
+
+
+/*========== EXAMPLE STYLES ==========*/
+.example__container{
+  background-color: var(--first-color-lighter);
+}
+
+.category__btn{
+  margin: 0 0 var(--mb-0-25) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--first-color-second);
+}
+
+/*========== SSERVICES STYLES ==========*/
+.services__title{
+  font-size: var(--h1-font-size);
+  margin: 0 0 var(--header-height) 0;
+}
+/*========== HOME STYLES ==========*/
+.home-dev__hero{
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  background-color: var(--first-color);
+}
+
+.home-dev__title{
+  position: relative;
+  font-size: var(--big-font-size);
+  color: #fff;
+  text-shadow: 2px 2px var(--first-color-lighter);
+}
+
+.home-dev__subtitle{
+  font-size: var(--h2-font-size);
+  color: #000000;
+  text-shadow: .3x .3px white;
+}
+
+.home-dev__logo{
+  position: relative;
+}
+
+
+/*========== NAV STYLES ==========*/
+.nav__icon{
+  font-size: 2rem;
+}
+
+.nav__button{
+  background-color: var(--first-color-lighter);
+  color: var(--first-color-third);
+}
+
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover{
+  color: var(--first-color);
+}
+/* FOOTER  STYLES */
+.footer{
+  background-color: var(--first-color-lighter);
+}
+
+.footer__icon{
+  color: var(--first-color-alt);
+}
+
+.footer__title{
+  font-size: var(--h2-font-size);
+}
+
+.footer__icon:hover{
+  color: var(--first-color-second);
+}
+
+
+/*==================== CONTACT STYLES ====================*/
 .contact__container{
   row-gap: 3rem;
 }

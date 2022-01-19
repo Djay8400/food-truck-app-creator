@@ -1,12 +1,6 @@
 import React from "react";
-// import FormCustomization from "../components/Form";
-// import FoodItem from "../components/FoodItem";
-// import Nav from "../components/Nav";
-// import Cart from "../components/Cart";
 import FTFlogo from "../assets/FTFlogo.png";
-import { Link } from "react-router-dom";
-// import modal from "../components/js/modal";
-import Footer from "../components/Footer"
+import "../index.css"
 const HomeDev = () => {
   return (
     <div>
@@ -30,7 +24,7 @@ const HomeDev = () => {
 
       <section className="container">
         <div className="columns features">
-          <div className="column is-4 home-dev__features">
+          <div className="column is-4">
             <div className="card is-shady">
               <div className="card-image has-text-centered">
                 <i className="uil uil-check nav__icon"></i>
@@ -49,7 +43,7 @@ const HomeDev = () => {
               </div>
             </div>
           </div>
-          <div className="column is-4 home-dev__features">
+          <div className="column is-4">
             <div className="card is-shady">
               <div className="card-image has-text-centered">
                 <i className="uil uil-dollar-alt nav__icon"></i>
@@ -67,7 +61,7 @@ const HomeDev = () => {
               </div>
             </div>
           </div>
-          <div className="column is-4 home-dev__features">
+          <div className="column is-4">
             <div className="card is-shady">
               <div className="card-image has-text-centered">
                 <i className="uil uil-lightbulb-alt nav__icon"></i>

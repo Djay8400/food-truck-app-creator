@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import FTFlogo from "../assets/FTFlogo.png";
 import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
@@ -38,10 +38,13 @@ function Signup(props) {
   };
 
   return (
-    <section className="hero signup__hero is-fullheight">
-      <div className="hero-body">
+    <section className="hero is-fullheight">
+      <div className="hero-body level-item signup__container">
         <div className="container">
-          <div className="auth__title">
+        <a className="home-dev__logo" href="../">
+            <img src={FTFlogo} alt="food-truck-fix logo" width={"150px"}></img>
+          </a>
+          <div className="signup__title">
             <h1>Sign Up</h1>
           </div>
 
@@ -49,7 +52,7 @@ function Signup(props) {
             <div className="column is-5-tablet is-4-desktop is-3-widescreen">
               <form onSubmit={handleFormSubmit} className="box">
                 <div className="field">
-                  <label htmlFor="" className="label">
+                  <label htmlFor="" className="label signup__label">
                     Email
                   </label>
                   <div className="control has-icons-left">
@@ -68,7 +71,7 @@ function Signup(props) {
                   </div>
                 </div>
                 <div className="field">
-                  <label htmlFor="" className="label">
+                  <label htmlFor="" className="label signup__label">
                     Username
                   </label>
                   <div className="control has-icons-left">
@@ -87,7 +90,7 @@ function Signup(props) {
                   </div>
                 </div>
                 <div className="field">
-                  <label htmlFor="" className="label">
+                  <label htmlFor="" className="label signup__label">
                     Password
                   </label>
                   <div className="control has-icons-left">
@@ -106,7 +109,26 @@ function Signup(props) {
                   </div>
                 </div>
                 <div className="field">
-                  <button className="button is-success">Signup</button>
+                  <label htmlFor="" className="label signup__label">
+                    Confirm Password
+                  </label>
+                  <div className="control has-icons-left">
+                    <input
+                      name="password"
+                      onChange={handleChange}
+                      type="password"
+                      id="password"
+                      placeholder="*******"
+                      className="input"
+                      required
+                    />
+                    <span className="icon is-small is-left">
+                      <i className="fa fa-lock"></i>
+                    </span>
+                  </div>
+                </div>
+                <div className="field">
+                  <button className="button signup__button">Signup</button>
                 </div>
               </form>
             </div>

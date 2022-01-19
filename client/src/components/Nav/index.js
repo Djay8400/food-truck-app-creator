@@ -9,7 +9,7 @@ function Nav() {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <div className="button is-hoverable">
+              <div className="button nav__button">
                 <a href="/" onClick={() => Auth.logout()}>
                   Logout
                 </a>
@@ -23,11 +23,11 @@ function Nav() {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <div className="button is-hoverable">
-                <Link to="/signup">Signup</Link>
+              <div className="button nav__button">
+                <Link to="/signup" className="nav__button">Signup</Link>
               </div>
-              <div className="button is-success">
-                <Link to="/login" style={{ color: "white" }}>
+              <div className="button nav__button">
+                <Link to="/login" className="nav__button">
                   Login
                 </Link>
               </div>

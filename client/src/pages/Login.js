@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { Link } from "react-router-dom";
+import FTFlogo from "../assets/FTFlogo.png";
 import { LOGIN_USER } from "../utils/mutations";
 import Auth from "../utils/auth";
 
@@ -33,14 +33,17 @@ function Login(props) {
     <section className="hero login__hero is-fullheight">
       <div className="hero-body">
         <div className="container">
-        <div className="auth__title">
+        <a className="home-dev__logo" href="../">
+            <img src={FTFlogo} alt="food-truck-fix logo" width={"150px"}></img>
+          </a>
+        <div className="login__title">
             <h1>Login</h1>
           </div>
           <div className="columns is-centered">
             <div className="column is-5-tablet is-4-desktop is-3-widescreen">
               <form onSubmit={handlehtmlFormSubmit} className="box">
                 <div className="field">
-                  <label htmlFor="email" className="label">
+                  <label htmlFor="email" className="label login__label">
                     Email
                   </label>
                   <div className="control has-icons-left">
@@ -59,7 +62,7 @@ function Login(props) {
                   </div>
                 </div>
                 <div className="field">
-                  <label htmlFor="" className="label">
+                  <label htmlFor="" className="label login__label">
                     Password
                   </label>
                   <div className="control has-icons-left">
@@ -78,14 +81,14 @@ function Login(props) {
                   </div>
                 </div>
                 <div className="field">
-                  <label htmlFor="" className="checkbox">
+                  <label htmlFor="" className="checkbox login__checkbox">
                     <input type="checkbox" />
                     Remember me
                   </label>
                 </div>
 
                 <div className="field">
-                  <button type="submit" className="button is-hoverable">
+                  <button type="submit" className="button login__button">
                     Login
                   </button>
                   {error ? (
