@@ -52,7 +52,7 @@ function Login(props) {
                       name="email"
                       id="email"
                       type="email"
-                      placeholder="e.g. bobsmith@gmail.com"
+                      placeholder="e.g. youremail@gmail.com"
                       className="input"
                       required
                     />

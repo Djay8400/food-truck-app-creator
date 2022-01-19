@@ -66,7 +66,7 @@ function Signup(props) {
                       onChange={handleChange}
                       type="email"
                       id="email"
-                      placeholder="e.g. bobsmith@gmail.com"
+                      placeholder="e.g. youremail@gmail.com"
                       className="input"
                       required
                     />
@@ -85,7 +85,7 @@ function Signup(props) {
                       onChange={handleChange}
                       type="username"
                       id="username"
-                      placeholder="e.g. SmokeySamsBBQ"
+                      placeholder="Username"
                       className="input"
                       required
                     />
