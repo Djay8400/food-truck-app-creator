@@ -46,9 +46,10 @@ function ProductList() {
     <div className="my-2">
       <h2>Our Products:</h2>
       {state.products.length ? (
-        
-          <div>
-            
+        <div>
+          <div className="container">
+            <div className="section">
+            <div id="app" className="row columns is-multiline">
               {filterProducts().map((product) => (
                 <ProductItem
                   key={product._id}
@@ -59,9 +60,10 @@ function ProductList() {
                   price={product.price}
                 />
               ))}
-            
-         </div> 
-        
+              </div>
+            </div>
+          </div>
+        </div>
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
@@ -72,8 +74,3 @@ function ProductList() {
 
 export default ProductList;
 
-// {filterProducts().map((product) => (
-//   <ProductItem key={product.id} _id={product._id}
-//   image={product.image} menuItem={product.menuItem}
-//   price={product.price} />
-// ))}

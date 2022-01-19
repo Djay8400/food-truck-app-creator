@@ -11,7 +11,7 @@ const Services = () => {
           </div>
         </div>
         <div id="app" className="row columns is-multiline">
-          <div v-for="card in cardData" key="card.id" className="column is-4">
+          <div className="column is-4">
             <div className="card large">
               <div className="card-image">
                 <figure className="image is-16by9">

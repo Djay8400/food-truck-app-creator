@@ -1,5 +1,4 @@
 import React from "react";
-import truckImg from "../assets/foodtruck.jpg";
 import FTFlogo from "../assets/FTFlogo.png";
 import { Link } from "react-router-dom";
 
