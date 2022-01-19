@@ -36,11 +36,6 @@ const HomeDev = () => {
                     FTF's user-friendly interface allows even first time users
                     to quickly get an application deployed in no time.
                   </p>
-                  <p>
-                    <a href="#" className="home-card__link">
-                      Learn more
-                    </a>
-                  </p>
                 </div>
               </div>
             </div>
@@ -57,11 +52,6 @@ const HomeDev = () => {
                     FTF is very affordable for small business owners. Different
                     packages are available for a one time purchase.
                   </p>
-                  <p>
-                    <a href="#" className="home-card__link">
-                      Learn more
-                    </a>
-                  </p>
                 </div>
               </div>
             </div>
@@ -77,11 +67,6 @@ const HomeDev = () => {
                   <p>
                     While maintaing its simplicity, FTF allows you to get as
                     complex as you want in your customization.
-                  </p>
-                  <p>
-                    <a href="#" className="home-card__link">
-                      Learn more
-                    </a>
                   </p>
                 </div>
               </div>
