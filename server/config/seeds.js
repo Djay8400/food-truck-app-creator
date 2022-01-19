@@ -17,14 +17,14 @@ db.once("open", async () => {
   const products = await Product.insertMany([
     {
       menuItem: "Bacon Cheese Burger",
-      menuDescription: "A good ass burger",
+      menuDescription: "Lots of Bacon, Cheese and Meat",
       image: "burgerPic.jpg",
       category: categories[0]._id,
       price: 8.99,
     },
     {
       menuItem: "Fries",
-      menuDescription: "Some good ass fries",
+      menuDescription: "Some fresh-cut fries",
       image: "fries.jpg",
       category: categories[1]._id,
       price: 3.99,
@@ -32,7 +32,7 @@ db.once("open", async () => {
     {
       menuItem: "Soda",
       category: categories[2]._id,
-      menuDescription: "some good ass soda",
+      menuDescription: "Bubbly refreshing soda",
       image: "sodaPic.jpg",
       price: 1.99,
     },
@@ -40,7 +40,7 @@ db.once("open", async () => {
     {
       menuItem: "Nachos",
       category: categories[1]._id,
-      menuDescription: "some good ass nachos",
+      menuDescription: "Nachos with a kick",
       image: "nachosPic.jpg",
       price: 5.99,
     },
@@ -48,7 +48,7 @@ db.once("open", async () => {
     {
       menuItem: "Water",
       category: categories[2]._id,
-      menuDescription: "some good ass water",
+      menuDescription: "Water is water",
       image: "waterBottlePic.jpg",
       price: 1.59,
     },
@@ -56,7 +56,7 @@ db.once("open", async () => {
     {
       menuItem: "Eggroll",
       category: categories[1]._id,
-      menuDescription: "some good ass eggrolls",
+      menuDescription: "Some good eggrolls",
       image: "eggrollPic.jpg",
       price: 2.99,
     },
@@ -64,8 +64,16 @@ db.once("open", async () => {
     {
       menuItem: "Chicken Strips",
       category: categories[0]._id,
-      menuDescription: "some good ass chicken",
+      menuDescription: "Delicious chicken",
       image: "chickenStripPic.jpg",
+      price: 7.99,
+    },
+
+    {
+      menuItem: "Fruit Cup",
+      category: categories[0]._id,
+      menuDescription: "Fresh and Healthy",
+      image: "fruitCupPic.jpg",
       price: 7.99,
     },
   ]);
