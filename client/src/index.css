@@ -271,10 +271,6 @@ img {
 }
 
 
-/*========== UPDATES AHEAD STYLES ==========*/
-
-
-
 /*========== NAV STYLES ==========*/
 
 .nav__item {
@@ -385,7 +381,11 @@ img {
 }
 
 /* UPDATES AHEAD STYLES */
-.updates-ahead__title {
+.updates-ahead__title h1{
+  color: var(--first-color-alt);
+}
+
+.updates-ahead__subtitle{
   color: var(--first-color-second);
 }
 
