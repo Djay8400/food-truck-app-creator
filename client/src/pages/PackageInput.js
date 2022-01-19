@@ -1,7 +1,7 @@
 import React from "react";
-import FTFlogo from "../assets/FTFlogo.png";
-import { Link } from "react-router-dom";
-import Cart from "../components/Cart";
+// import FTFlogo from "../assets/FTFlogo.png";
+// import { Link } from "react-router-dom";
+// import Cart from "../components/Cart";
 export default function PackageInput() {
   return (
     <div>
