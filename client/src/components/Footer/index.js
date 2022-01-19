@@ -14,6 +14,7 @@ function Footer() {
                 <a
                   className="icon footer__icon"
                   href="https://github.com/Djay8400/food-truck-app-creator"
+                  target="_blank"
                 >
                   <i className="uil uil-github"></i>
                   Github
@@ -22,7 +23,8 @@ function Footer() {
               <li>
                 <a
                   className="icon mt-2 footer__icon"
-                  href="https://github.com/Djay8400/food-truck-app-creator"
+                  href="https://www.facebook.com/Food-Truck-Fix-102433449016196"
+                  target="_blank"
                 >
                   <i className="uil uil-facebook"></i>
                   Facebook
@@ -31,7 +33,8 @@ function Footer() {
               <li>
                 <a
                   className="icon mt-2 footer__icon"
-                  href="https://github.com/Djay8400/food-truck-app-creator"
+                  href="https://twitter.com/foodtruckfixco"
+                  target="_blank"
                 >
                   <i className="uil uil-twitter"></i>
                     Twitter
