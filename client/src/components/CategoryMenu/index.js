@@ -49,7 +49,7 @@ function CategoryMenu() {
 
       <button
         type="button"
-        onClick="window.location.reload()"
+        onClick={() => "window.location.reload()"}
         className="button is-rounded category__btn"
       >
         <Link to="/example">
