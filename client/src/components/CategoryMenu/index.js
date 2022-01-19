@@ -48,14 +48,14 @@ function CategoryMenu() {
       <h2>Choose a Category:</h2>
 
       <button
-        type="button"
-        onClick={"window.location.reload()"}
+        onClick={() => {
+          handleClick(window.location.reload());
+        }}
         className="button is-rounded category__btn"
       >
-        <Link to="/example">
-          <strong>View All</strong>
-        </Link>
+        <strong>View All</strong>
       </button>
+      
       {categories.map((item) => (
         <button
           className="button is-rounded category__btn"
