@@ -112,18 +112,17 @@ const Cart = () => {
             <CartItem key={item._id} item={item} />
           ))}
 
-          <div className="flex-row space-between">
+          <div className="align-content flex-row">
             <strong>Total: ${calculateTotal()}</strong>
 
             {Auth.loggedIn() ? (
-              <button onClick={submitCheckout}>
                 <StripeCheckout
                   stripeKey={
                     'pk_test_51KHBZnDLG1yx92htZ80kTOdpuI3muXW2c11aYwghcctZ8Av6TM3BNrzkVqrytVsPS7g11fRnPiMi5LvWbTKNCvfI00pcq75slU'
                   }
                   token={makePayment}
-                  name="Get some grub"
-                  amount={product.price * 100}
+                  name="I can smell it already..."
+                  amount={calculateTotal()*100}
                 >
                   <div className="container">
                     <button className="button is-primary">
@@ -131,7 +130,6 @@ const Cart = () => {
                     </button>
                   </div>
                 </StripeCheckout>
-              </button>
             ) : (
               <span>(log in to check out)</span>
             )}
