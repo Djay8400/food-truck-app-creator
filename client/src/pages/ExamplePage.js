@@ -6,7 +6,7 @@ import yourLogoHere from "../assets/your-logo-here.png";
 
 const ExamplePage = () => {
   return (
-    <div className="container">
+    <div className="container" style={{ backgroundColor: "#EAC440" }}>
       <div className="hero-head">
         <a className="" href="../">
           <img

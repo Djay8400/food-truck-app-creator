@@ -59,7 +59,7 @@ function Nav() {
           aria-label="menu"
           aria-expanded="false"
           data-target="navbar"
-          onClick={burgerBtn}
+          onClick={() => burgerBtn}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
