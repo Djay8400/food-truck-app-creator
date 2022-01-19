@@ -30,7 +30,7 @@ code {
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 15%);
     --text-color-light: hsl(var(--hue-color), 8%, 90%);
-    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --input-color: hsl(var(--hue-color), 70%, 90%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #FFF;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
@@ -103,8 +103,15 @@ body.dark-theme{
   font-size: var(--normal-font-size);
   background-color: var(--first-color-second);
 }
-
+/*========== SignUp Styles ==========*/
 .signup__hero{
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--first-color);
+}
+/*========== Login Styles ==========*/
+.login__hero{
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -117,16 +124,12 @@ body.dark-theme{
 .example__container{
   background-color: var(--first-color-lighter);
 }
-
-.example__page-logo{
-  
-}
-
+/*========== Login Styles ==========*/
 .services__title{
   font-size: var(--h1-font-size);
   margin: 0 0 var(--header-height) 0;
 }
-
+/*========== Home Styles ==========*/
 .home-dev__hero{
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
@@ -143,7 +146,7 @@ body.dark-theme{
   font-size: var(--h3-font-size);
   color: var(--text-color-light);
 }
-
+/*========== Nav Styles ==========*/
 .nav__icon{
   font-size: 2rem;
 }
@@ -238,6 +241,7 @@ img{
 
 .contact__label{
   font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
   color: var(--title-color);
 }
 

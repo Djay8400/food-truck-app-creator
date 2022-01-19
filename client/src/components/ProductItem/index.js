@@ -51,7 +51,7 @@ function ProductItem(item) {
             <p>{menuDescription}</p>
           </div>
           <div className="content">
-            <p>{price}</p>
+            <p>${price}</p>
           </div>
           <div className="content">
             <button className="button" onClick={addToCart}>

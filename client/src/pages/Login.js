@@ -30,7 +30,7 @@ function Login(props) {
   };
 
   return (
-    <section className="hero signup__hero is-fullheight">
+    <section className="hero login__hero is-fullheight">
       <div className="hero-body">
         <div className="container">
         <div className="auth__title">
