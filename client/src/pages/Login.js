@@ -80,12 +80,6 @@ function Login(props) {
                     </span>
                   </div>
                 </div>
-                <div className="field">
-                  <label htmlFor="" className="checkbox login__checkbox">
-                    <input type="checkbox" />
-                    Remember me
-                  </label>
-                </div>
 
                 <div className="field">
                   <button type="submit" className="button login__button">
