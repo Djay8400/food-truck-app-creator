@@ -20,6 +20,7 @@ import ExamplePage from "./pages/ExamplePage";
 import Success from "./pages/Success";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
+import PackageInput from "./pages/PackageInput";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -56,6 +57,7 @@ function App() {
               <Route exact path="/contact" element={<Contact />} />
               <Route exact path="/services" element={<Services />} />
               <Route exact path="/products/:id" element={<Detail />} />
+              <Route exact path="/packageInput" element={<PackageInput />} />
               {/* <Route element={<NoMatch/>} /> */}
             </Routes>
           </StoreProvider>

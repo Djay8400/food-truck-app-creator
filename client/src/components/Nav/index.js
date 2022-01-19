@@ -75,16 +75,10 @@ function Nav() {
           <div className="navbar-item">
             <Link to="/services">Services</Link>
           </div>
-
-          <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link">More</a>
-
-            <div className="navbar-dropdown">
-              <Link to="/contact">Contact us</Link>
-              <hr className="navbar-divider" />
-              <a className="navbar-item">Report an issue</a>
-            </div>
+          <div className="navbar-item">
+            <Link to="/contact">Contact</Link>
           </div>
+
         </div>
       </div>
       <div>{showNavigation()}</div>
