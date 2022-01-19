@@ -28,7 +28,7 @@ function UpdatesAhead() {
                     </h2>
                     <h1 class="title updates-ahead__title">Getting Started</h1>
                     <p>
-                      This year Food Truck Fix and it'd developers have big
+                      This year, Food Truck Fix and its developers have big
                       plans.
                     </p>
                   </div>
