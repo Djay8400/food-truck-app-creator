@@ -12,7 +12,7 @@ const HomeDev = () => {
     <div>
       <section className="hero home-dev__hero is-small is-bold">
         <div className="hero-head">
-          <a className="" href="../">
+          <a className="home-dev__logo" href="../">
             <img src={FTFlogo} alt="food-truck-fix logo" width={"300px"}></img>
           </a>
         </div>
@@ -22,8 +22,7 @@ const HomeDev = () => {
               Looking to take your business to the next level?
             </h1>
             <h2 className="home-dev__subtitle">
-              Food Truck Fix is the best way to setup your very own application
-              to increase profits and efficiency...
+              Setup your very own application with Food Truck Fix.
             </h2>
           </div>
         </div>
@@ -31,7 +30,7 @@ const HomeDev = () => {
 
       <section className="container">
         <div className="columns features">
-          <div className="column is-4">
+          <div className="column is-4 home-dev__features">
             <div className="card is-shady">
               <div className="card-image has-text-centered">
                 <i className="uil uil-check nav__icon"></i>
@@ -50,7 +49,7 @@ const HomeDev = () => {
               </div>
             </div>
           </div>
-          <div className="column is-4">
+          <div className="column is-4 home-dev__features">
             <div className="card is-shady">
               <div className="card-image has-text-centered">
                 <i className="uil uil-dollar-alt nav__icon"></i>
@@ -59,9 +58,7 @@ const HomeDev = () => {
                 <div className="content">
                   <h4>Affordable</h4>
                   <p>
-                    FTF takes a small percentage of your sales and lets you know
-                    ahead of time what to expect. We never have hidden or BS
-                    fees.
+                    FTF is very affordable for small business owners. Different packages are available for a one time purchase.
                   </p>
                   <p>
                     <a href="#">Learn more</a>
@@ -70,7 +67,7 @@ const HomeDev = () => {
               </div>
             </div>
           </div>
-          <div className="column is-4">
+          <div className="column is-4 home-dev__features">
             <div className="card is-shady">
               <div className="card-image has-text-centered">
                 <i className="uil uil-lightbulb-alt nav__icon"></i>
@@ -93,7 +90,7 @@ const HomeDev = () => {
       </section>
       <footer className="footer">
         <div className="container">
-          <div className="columns">
+          <div className="columns home-dev__footer">
             <div className="column is-3 is-offset-2">
               <h2>
                 <strong>Contact</strong>
