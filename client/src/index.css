@@ -16,6 +16,7 @@
   --first-color: hsl(var(--hue-color), 69%, 30%);
   --first-color-second: hsl(var(--hue-color), 69%, 60%);
   --first-color-third: hsl(var(--hue-color), 50%, 25%);
+  --first-color-fourth: hsl(var(--hue-color), 69%, 60%);
   --first-color-alt: hsl(var(--hue-color), 57%, 45%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 65%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -130,7 +131,7 @@ img {
   margin: 0 0 var(--mb-2) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--first-color);
+  background-color: var(--first-color-fourth);
 }
 
 .signup__title h1 {
@@ -151,7 +152,7 @@ img {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--first-color);
+  background-color: var(--first-color-fourth);
 }
 
 .login__title h1 {
